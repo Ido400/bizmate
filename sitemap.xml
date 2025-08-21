@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.bizmate.co.il/</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Us Section -->
+  <url>
+    <loc>https://www.bizmate.co.il/#about</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Solutions Section -->
+  <url>
+    <loc>https://www.bizmate.co.il/#solutions</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Sales Agent -->
+  <url>
+    <loc>https://www.bizmate.co.il/#solutions-sales</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Operations Agent -->
+  <url>
+    <loc>https://www.bizmate.co.il/#solutions-operations</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Support Agent -->
+  <url>
+    <loc>https://www.bizmate.co.il/#solutions-support</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact/Demo Section -->
+  <url>
+    <loc>https://www.bizmate.co.il/#contact</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
