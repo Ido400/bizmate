@@ -3655,18 +3655,19 @@
             `;
             
             chatContainer.innerHTML = `
-                <div style="
+                <div class="chat-dialog" style="
                     background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0c4a6e 100%);
                     border-radius: 20px;
-                    width: 90%;
+                    width: 95%;
                     max-width: 600px;
-                    height: 85vh;
-                    max-height: min(600px, 85vh);
+                    height: calc(100vh - 40px);
+                    max-height: calc(100vh - 40px);
                     border: 2px solid rgba(6, 182, 212, 0.3);
                     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
                     display: flex;
                     flex-direction: column;
                     overflow: hidden;
+                    position: relative;
                 ">
                     <!-- Chat Header -->
                     <div style="
@@ -3774,6 +3775,27 @@
                 </div>
             `;
             
+            // Add mobile-specific styles
+            const mobileStyle = document.createElement('style');
+            mobileStyle.textContent = `
+                @media (max-width: 768px) {
+                    .chat-dialog {
+                        width: 100% !important;
+                        height: 100vh !important;
+                        max-height: 100vh !important;
+                        border-radius: 0 !important;
+                        margin: 0 !important;
+                    }
+                }
+                @media (max-height: 600px) {
+                    .chat-dialog {
+                        height: 100vh !important;
+                        max-height: 100vh !important;
+                    }
+                }
+            `;
+            document.head.appendChild(mobileStyle);
+            
             document.body.appendChild(chatContainer);
             
             // Add click outside to close
@@ -3783,13 +3805,40 @@
                 }
             });
             
+            // Mobile keyboard handling
+            const chatInput = document.getElementById('chatInput');
+            const chatDialog = document.querySelector('.chat-dialog');
+            
+            // Prevent zoom on iOS
+            chatInput.addEventListener('touchstart', function() {
+                document.querySelector('meta[name=viewport]').setAttribute('content', 
+                    'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+            });
+            
+            // Handle iOS keyboard
+            if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+                chatInput.addEventListener('focus', function() {
+                    setTimeout(() => {
+                        chatDialog.style.height = '100vh';
+                        chatDialog.scrollIntoView({ behavior: 'smooth', block: 'end' });
+                    }, 300);
+                });
+                
+                chatInput.addEventListener('blur', function() {
+                    setTimeout(() => {
+                        document.querySelector('meta[name=viewport]').setAttribute('content', 
+                            'width=device-width, initial-scale=1.0');
+                    }, 100);
+                });
+            }
+            
             // Focus on input
             setTimeout(() => {
-                document.getElementById('chatInput').focus();
+                chatInput.focus();
             }, 100);
             
             // Handle Enter key
-            document.getElementById('chatInput').addEventListener('keypress', function(e) {
+            chatInput.addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
                     sendMessage();
                 }
