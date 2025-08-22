@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- SEO and Sitemap -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -142,7 +143,7 @@
                     "ratingValue": "5",
                     "bestRating": "5"
                 },
-                "reviewBody": "הסוכן הדיגיטלי של Bizmate שינה לי את העסק! עכשיו אני יכול להתמקד בפיתוח במקום בניהול יומיומי."
+                "reviewBody": "שני סוכנים של Bizmate שינו לי את העסק! עכשיו אני יכול להתמקד בפיתוח במקום בניהול יומיומי."
             },
             {
                 "@type": "Review",
@@ -763,6 +764,7 @@
         .technology-container {
             max-width: 1200px;
             margin: 0 auto;
+            margin-top: 40px;
         }
 
         .tech-intro {
@@ -1501,10 +1503,143 @@
             }
         }
 
+        /* Automation Solutions Section */
+        .automation-solutions-section {
+            padding: 80px 50px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            color: white;
+            position: relative;
+            z-index: 3;
+        }
+        .automation-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .automation-intro {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .automation-intro h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #06b6d4, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .automation-intro p {
+            font-size: 1.3rem;
+            color: #cbd5e1;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .solution-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px 30px;
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        .solution-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(6, 182, 212, 0.5);
+            box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+        }
+        .solution-icon {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            background: linear-gradient(45deg, #06b6d4, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .solution-card h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .solution-card p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .solution-features {
+            list-style: none;
+            padding: 0;
+        }
+        .solution-features li {
+            padding: 8px 0;
+            color: #e2e8f0;
+            position: relative;
+            padding-left: 25px;
+        }
+        .solution-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+        .automation-cta {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(16, 185, 129, 0.1));
+            border-radius: 25px;
+            padding: 50px 40px;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+        }
+        .automation-cta h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #06b6d4, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .automation-cta p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        /* Mobile responsiveness for automation solutions */
+        @media (max-width: 768px) {
+            .automation-solutions-section {
+                padding: 50px 20px;
+            }
+            .automation-intro h2 {
+                font-size: 2rem;
+            }
+            .automation-intro p {
+                font-size: 1.1rem;
+            }
+            .solutions-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .solution-card {
+                padding: 30px 20px;
+            }
+            .automation-cta {
+                padding: 40px 20px;
+            }
+        }
+        
         /* Solutions Section */
         .solutions-section {
             padding: 100px 50px 50px;
-            background: rgba(255, 255, 255, 0.02);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
             position: relative;
             z-index: 3;
             margin-top: -50px;
@@ -1901,8 +2036,28 @@
             }
 
             .chat-now-btn {
-                padding: 18px 32px;
+                padding: 15px 20px;
+                font-size: 1rem;
+                border-radius: 25px;
+                flex-direction: column;
+                text-align: center;
+                gap: 5px;
+                max-width: 300px;
+                margin: 0 auto;
+                line-height: 1.2;
+            }
+            .chat-now-btn .btn-text {
+                font-size: 0.9rem;
+                line-height: 1.3;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .chat-now-btn .btn-icon {
                 font-size: 1.1rem;
+            }
+            .chat-now-btn .btn-arrow {
+                display: none;
             }
 
             .chat-benefits {
@@ -2541,12 +2696,89 @@
         </div>
     </section>
 
+    <!-- Automation Solutions Section -->
+    <section id="automation-solutions" class="automation-solutions-section">
+        <div class="automation-container">
+            <div class="automation-intro">
+                <h2>פתרונות אוטומציה מתקדמים</h2>
+                <p>אנחנו מספקים פתרונות אוטומציה חכמים המותאמים במיוחד לעסקים המחפשים לשפר את היעילות שלהם ולהקטין עבודה ידנית</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">🚀</div>
+                    <h3>אוטומציה של תהליכי מכירות</h3>
+                    <p>המערכת שלנו מנהלת את כל מחזור המכירות - מהלקח הראשון ועד לסגירת העסקה.</p>
+                    <ul class="solution-features">
+                        <li>זיהוי וטיפוח לידים אוטומטי</li>
+                        <li>מעקב אחר לקוחות פוטנציאליים</li>
+                        <li>יצירת הצעות מחיר מותאמות אישית</li>
+                        <li>תזכורות אוטומטיות למעקב</li>
+                        <li>דוחות מכירות מפורטים</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">🛠️</div>
+                    <h3>ניהול תפעול חכם</h3>
+                    <p>אוטומציה של משימות תפעוליות יומיומיות לחיסכון בזמן ומשאבים.</p>
+                    <ul class="solution-features">
+                        <li>ניהול מלאי אוטומטי</li>
+                        <li>תזמון פגישות ומשימות</li>
+                        <li>אינטגרציה עם מערכות הנהלת חשבונות</li>
+                        <li>ניהול הזמנות ולוגיסטיקה</li>
+                        <li>מעקב אחר ביצועים בזמן אמת</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">💬</div>
+                    <h3>שירות לקוחות מתקדם</h3>
+                    <p>מענה מיידי ואישי ללקוחות עם יכולות בינה מלאכותית מתקדמות.</p>
+                    <ul class="solution-features">
+                        <li>צ'אט בוט חכם בעברית</li>
+                        <li>מענה אוטומטי לפניות נפוצות</li>
+                        <li>הפנייה חכמה לנציגים אנושיים</li>
+                        <li>מעקב שביעות רצון לקוחות</li>
+                        <li>בסיס ידע דינמי</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">○</div>
+                    <h3>ניתוח נתונים ותובנות</h3>
+                    <p>הבנה מעמיקה של הביצועים העסקיים שלכם עם תובנות מבוססות נתונים.</p>
+                    <ul class="solution-features">
+                        <li>דשבורדים אישיים ואינטראקטיביים</li>
+                        <li>ניתוח התנהגות לקוחות</li>
+                        <li>תחזיות מכירות מדויקות</li>
+                        <li>זיהוי הזדמנויות שיפור</li>
+                        <li>דוחות ביצועים אוטומטיים</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-icon">💡</div>
+                    <h3>אוטומציה מותאמת אישית</h3>
+                    <p>יש לכם תהליך חוזר ומשעמם? אנחנו יכולים לבנות אוטומציה כמעט לכל דבר - פשוט חשבו על זה!</p>
+                    <ul class="solution-features">
+                        <li>ניתוח תהליכים עסקיים קיימים</li>
+                        <li>פיתוח פתרונות אוטומציה ייחודיים</li>
+                        <li>אינטגרציה עם מערכות קיימות</li>
+                        <li>חיסכון בזמן ומשאבים משמעותי</li>
+                        <li>ליווי מלא עד להטמעה מושלמת</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Solutions Section -->
     <section id="solutions" class="solutions-section">
         <div class="solutions-container">
             <div class="section-header" style="text-align: center;">
                 <h2 style="text-align: center; margin: 20px 10px 20px 10px; padding: 0 10px;">הסוכנים הדיגיטליים שלנו</h2>
-                <p style="text-align: center;">שלושה סוכנים מתקדמים שיחדיו יהפכו את העסק שלך לחכם ויעיל יותר</p>
+                <p style="text-align: center;">שני סוכנים מתקדמים שיחדיו יהפכו את העסק שלך לחכם ויעיל יותר</p>
             </div>
             
             <div class="agents-carousel">
@@ -2622,22 +2854,22 @@
                     </div>
                     <div class="integration-list">
                         <div class="integration-item">
-                            <span class="integration-logo">📊</span>
+                            <span class="integration-logo"><i class="fab fa-salesforce" style="color: #00A1E0;"></i></span>
                             <span class="integration-name">Salesforce</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">💼</span>
+                            <span class="integration-logo"><i class="fab fa-hubspot" style="color: #FF7A59;"></i></span>
                             <span class="integration-name">HubSpot</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">🎯</span>
+                            <span class="integration-logo"><i class="fas fa-bullseye" style="color: #4CAF50;"></i></span>
                             <span class="integration-name">Pipedrive</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">📈</span>
+                            <span class="integration-logo"><i class="fas fa-chart-line" style="color: #8E44AD;"></i></span>
                             <span class="integration-name">Zoho CRM</span>
                             <span class="integration-status">✓</span>
                         </div>
@@ -2651,22 +2883,22 @@
                     </div>
                     <div class="integration-list">
                         <div class="integration-item">
-                            <span class="integration-logo">💚</span>
+                            <span class="integration-logo"><i class="fab fa-whatsapp" style="color: #25D366;"></i></span>
                             <span class="integration-name">WhatsApp Business</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">📧</span>
+                            <span class="integration-logo"><i class="fab fa-google" style="color: #DB4437;"></i></span>
                             <span class="integration-name">Gmail</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">💬</span>
+                            <span class="integration-logo"><i class="fab fa-telegram" style="color: #0088CC;"></i></span>
                             <span class="integration-name">Telegram</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">📱</span>
+                            <span class="integration-logo"><i class="fas fa-mobile-alt" style="color: #34495E;"></i></span>
                             <span class="integration-name">SMS</span>
                             <span class="integration-status">✓</span>
                         </div>
@@ -2680,22 +2912,22 @@
                     </div>
                     <div class="integration-list">
                         <div class="integration-item">
-                            <span class="integration-logo">📋</span>
+                            <span class="integration-logo"><i class="fas fa-calendar-check" style="color: #FF3D57;"></i></span>
                             <span class="integration-name">Monday.com</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">📊</span>
+                            <span class="integration-logo"><i class="fas fa-sticky-note" style="color: #000000;"></i></span>
                             <span class="integration-name">Notion</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">⚡</span>
+                            <span class="integration-logo"><i class="fas fa-bolt" style="color: #FF4F00;"></i></span>
                             <span class="integration-name">Zapier</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">🔗</span>
+                            <span class="integration-logo"><i class="fas fa-link" style="color: #6C2BD9;"></i></span>
                             <span class="integration-name">Make (Integromat)</span>
                             <span class="integration-status">✓</span>
                         </div>
@@ -2709,22 +2941,22 @@
                     </div>
                     <div class="integration-list">
                         <div class="integration-item">
-                            <span class="integration-logo">🛒</span>
+                            <span class="integration-logo"><i class="fab fa-shopify" style="color: #7AB55C;"></i></span>
                             <span class="integration-name">Shopify</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">🏬</span>
+                            <span class="integration-logo"><i class="fab fa-wordpress" style="color: #21759B;"></i></span>
                             <span class="integration-name">WooCommerce</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">💳</span>
+                            <span class="integration-logo"><i class="fab fa-paypal" style="color: #003087;"></i></span>
                             <span class="integration-name">PayPal</span>
                             <span class="integration-status">✓</span>
                         </div>
                         <div class="integration-item">
-                            <span class="integration-logo">💰</span>
+                            <span class="integration-logo"><i class="fab fa-stripe" style="color: #008CDD;"></i></span>
                             <span class="integration-name">Stripe</span>
                             <span class="integration-status">✓</span>
                         </div>
