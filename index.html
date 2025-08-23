@@ -400,6 +400,11 @@
             font-family: "Huninn", sans-serif;
         }
 
+        /* Hide mobile buttons on desktop */
+        .mobile-bot-buttons {
+            display: none;
+        }
+
         /* Mobile WhatsApp Button */
         @media (max-width: 768px) {
             .whatsapp-chat {
@@ -422,6 +427,46 @@
                 border-radius: 50%;
                 justify-content: center;
                 padding: 0;
+            }
+            
+            .mobile-bot-buttons {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display: flex;
+                gap: 15px;
+                z-index: 1000;
+            }
+            
+            .bot-btn {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: linear-gradient(45deg, #8b5cf6, #a855f7);
+                color: white;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                cursor: pointer;
+                box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.6, 1);
+                animation: float 3s ease-in-out infinite;
+                animation-delay: 0.5s;
+            }
+            
+            .bot-btn:hover {
+                transform: translateY(-3px) scale(1.05);
+                box-shadow: 0 12px 35px rgba(139, 92, 246, 0.6);
+            }
+            
+            .whatsapp-chat {
+                display: none;
+            }
+            
+            .mobile-bot-buttons {
+                display: flex;
             }
 
             .whatsapp-icon {
@@ -1482,6 +1527,11 @@
                 font-size: 2.5rem;
             }
 
+            nav {
+                justify-content: center;
+                padding: 15px 20px;
+            }
+            
             .nav-links {
                 display: none;
             }
@@ -3245,6 +3295,19 @@
         </a>
     </div>
 
+    <!-- Mobile Bot Buttons -->
+    <div class="mobile-bot-buttons">
+        <button class="bot-btn" onclick="openDemoChat()" aria-label="קבל הדגמה חינם">
+            🤖
+        </button>
+        <a href="https://wa.me/972501234567?text=היי, אני מעוניין לקבל מידע על הסוכנים הדיגיטליים של Bizmate" 
+           target="_blank" 
+           class="whatsapp-btn"
+           aria-label="התחל עכשיו עם הסוכן שלך">
+            <span class="whatsapp-icon">💬</span>
+        </a>
+    </div>
+
 
     <script>
         /*
@@ -3806,6 +3869,39 @@
             
             document.body.appendChild(chatContainer);
             
+            // Hide accessibility button on mobile when chat opens
+            if (window.innerWidth <= 768) {
+                function hideAccessibilityWidget() {
+                    const accessibilityWidget = document.querySelector('#sienna-widget') || 
+                                              document.querySelector('[data-sienna]') || 
+                                              document.querySelector('.sienna-widget') ||
+                                              document.querySelector('.accessibility-widget') ||
+                                              document.querySelector('iframe[src*="sienna"]') ||
+                                              document.querySelector('div[id*="sienna"]') ||
+                                              document.querySelector('div[class*="sienna"]') ||
+                                              document.querySelector('[class*="widget"]') ||
+                                              document.querySelector('div[style*="position: fixed"]');
+                    
+                    if (accessibilityWidget) {
+                        const currentDisplay = window.getComputedStyle(accessibilityWidget).display;
+                        accessibilityWidget.setAttribute('data-original-display', currentDisplay);
+                        accessibilityWidget.style.display = 'none';
+                        // Store reference for later restoration
+                        window.hiddenAccessibilityWidget = accessibilityWidget;
+                        return true;
+                    }
+                    return false;
+                }
+                
+                // Try immediately
+                if (!hideAccessibilityWidget()) {
+                    // If not found, try again after a short delay
+                    setTimeout(hideAccessibilityWidget, 100);
+                    setTimeout(hideAccessibilityWidget, 500);
+                    setTimeout(hideAccessibilityWidget, 1000);
+                }
+            }
+            
             // Add click outside to close
             chatContainer.addEventListener('click', function(e) {
                 if (e.target === chatContainer) {
@@ -3854,6 +3950,38 @@
         }
 
         function closeChatDialog() {
+            // Restore accessibility button IMMEDIATELY when chat closes
+            if (window.innerWidth <= 768) {
+                // First try to restore from stored reference
+                if (window.hiddenAccessibilityWidget) {
+                    const originalDisplay = window.hiddenAccessibilityWidget.getAttribute('data-original-display') || 'block';
+                    window.hiddenAccessibilityWidget.style.display = originalDisplay;
+                    window.hiddenAccessibilityWidget.removeAttribute('data-original-display');
+                    window.hiddenAccessibilityWidget = null;
+                } else {
+                    // Fallback: search for the widget again and force it to show
+                    const accessibilityWidget = document.querySelector('#sienna-widget') || 
+                                              document.querySelector('[data-sienna]') || 
+                                              document.querySelector('.sienna-widget') ||
+                                              document.querySelector('.accessibility-widget') ||
+                                              document.querySelector('iframe[src*="sienna"]') ||
+                                              document.querySelector('div[id*="sienna"]') ||
+                                              document.querySelector('div[class*="sienna"]') ||
+                                              document.querySelector('[class*="widget"]') ||
+                                              document.querySelector('div[style*="position: fixed"]');
+                    
+                    if (accessibilityWidget) {
+                        const originalDisplay = accessibilityWidget.getAttribute('data-original-display') || 'block';
+                        accessibilityWidget.style.display = originalDisplay;
+                        accessibilityWidget.removeAttribute('data-original-display');
+                        // Force visibility
+                        accessibilityWidget.style.visibility = 'visible';
+                        accessibilityWidget.style.opacity = '1';
+                    }
+                }
+            }
+            
+            // Remove chat container after restoring accessibility widget
             const chatContainer = document.getElementById('chatContainer');
             if (chatContainer) {
                 chatContainer.remove();
