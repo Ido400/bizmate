@@ -3852,6 +3852,10 @@
                         border-radius: 0 !important;
                         margin: 0 !important;
                     }
+                    #chatContainer .chat-dialog > div:last-child {
+                        padding-bottom: 20px !important;
+                        margin-bottom: 10px !important;
+                    }
                 }
                 @media (max-height: 600px) {
                     .chat-dialog {
@@ -3862,6 +3866,10 @@
                 @media (max-width: 480px) {
                     .chat-dialog {
                         padding-bottom: env(safe-area-inset-bottom) !important;
+                    }
+                    #chatContainer .chat-dialog > div:last-child {
+                        padding-bottom: calc(20px + env(safe-area-inset-bottom)) !important;
+                        margin-bottom: 15px !important;
                     }
                 }
             `;
