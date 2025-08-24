@@ -20,7 +20,15 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Solutions Section -->
+  <!-- Automation Solutions Section -->
+  <url>
+    <loc>https://www.bizmate.co.il/#automation-solutions</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- AI Agents Solutions Section -->
   <url>
     <loc>https://www.bizmate.co.il/#solutions</loc>
     <lastmod>2025-01-21</lastmod>
@@ -28,36 +36,52 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Sales Agent -->
+  <!-- Technology & Integrations Section -->
   <url>
-    <loc>https://www.bizmate.co.il/#solutions-sales</loc>
+    <loc>https://www.bizmate.co.il/#technology</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Operations Agent -->
+  <!-- Why Choose Us Section -->
   <url>
-    <loc>https://www.bizmate.co.il/#solutions-operations</loc>
+    <loc>https://www.bizmate.co.il/#why-choose-us</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Support Agent -->
+  <!-- Client Reviews Section -->
   <url>
-    <loc>https://www.bizmate.co.il/#solutions-support</loc>
-    <lastmod>2025-01-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Contact/Demo Section -->
-  <url>
-    <loc>https://www.bizmate.co.il/#contact</loc>
+    <loc>https://www.bizmate.co.il/#reviews</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- WhatsApp Contact -->
+  <url>
+    <loc>https://wa.me/972501234567</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Privacy Policy (if exists) -->
+  <url>
+    <loc>https://www.bizmate.co.il/#privacy</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms of Service (if exists) -->
+  <url>
+    <loc>https://www.bizmate.co.il/#terms</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
