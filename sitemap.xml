@@ -6,7 +6,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.bizmate.co.il/</loc>
+    <loc>https://blog.bizmate-automation.com/</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- About Us Section -->
   <url>
-    <loc>https://www.bizmate.co.il/#about</loc>
+    <loc>https:/blog.bizmate-automation.com/#about</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -22,7 +22,7 @@
 
   <!-- Automation Solutions Section -->
   <url>
-    <loc>https://www.bizmate.co.il/#automation-solutions</loc>
+    <loc>https://blog.bizmate-automation.com/#automation-solutions</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -30,7 +30,7 @@
 
   <!-- AI Agents Solutions Section -->
   <url>
-    <loc>https://www.bizmate.co.il/#solutions</loc>
+    <loc>https://blog.bizmate-automation.com/#solutions</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -38,7 +38,7 @@
 
   <!-- Technology & Integrations Section -->
   <url>
-    <loc>https://www.bizmate.co.il/#technology</loc>
+    <loc>https://blog.bizmate-automation.com/#technology</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -46,7 +46,7 @@
 
   <!-- Why Choose Us Section -->
   <url>
-    <loc>https://www.bizmate.co.il/#why-choose-us</loc>
+    <loc>https://blog.bizmate-automation.com/#why-choose-us</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -54,7 +54,7 @@
 
   <!-- Client Reviews Section -->
   <url>
-    <loc>https://www.bizmate.co.il/#reviews</loc>
+    <loc>https://blog.bizmate-automation.com/#reviews</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -70,7 +70,7 @@
 
   <!-- Privacy Policy (if exists) -->
   <url>
-    <loc>https://www.bizmate.co.il/#privacy</loc>
+    <loc>https://blog.bizmate-automation.com/#privacy</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -78,7 +78,7 @@
 
   <!-- Terms of Service (if exists) -->
   <url>
-    <loc>https://www.bizmate.co.il/#terms</loc>
+    <loc>https://blog.bizmate-automation.com/#terms</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
