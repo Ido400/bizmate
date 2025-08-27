@@ -16,7 +16,7 @@ Sitemap: https://blog.bizmate-automation.com/sitemap.xml
 
 # Allow crawling of important files
 Allow: /sitemap.xml
-Allow: /favicon.ico
+Allow: /logo.png
 Allow: /robots.txt
 
 # Crawl delay (optional - prevents overloading the server)
