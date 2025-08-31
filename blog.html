@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בלוג - Bizmate Automation</title>
+    <meta name="description" content="מדריכים, טיפים ותובנות על אוטומציה עסקית, בינה מלאכותית וטכנולוגיות מתקדמות לעסקים קטנים ובינוניים בישראל.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="בלוג אוטומציה, מדריכי AI, טיפים עסקיים, בינה מלאכותית, עסקים קטנים בישראל">
+    <link rel="canonical" href="https://blog.bizmate-automation.com/blog">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="בלוג - Bizmate Automation">
+    <meta property="og:description" content="מדריכים, טיפים ותובנות על אוטומציה עסקית, בינה מלאכותית וטכנולוגיות מתקדמות לעסקים קטנים ובינוניים בישראל.">
+    <meta property="og:url" content="https://blog.bizmate-automation.com/blog">
+    <meta property="og:image" content="https://blog.bizmate-automation.com/logo.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+
+</head>
+<body>
+    <div class="bg-effect">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+    </div>
+
+    <nav>
+        <a href="/" class="logo">Bizmate</a>
+        <ul class="nav-links">
+            <li><a href="/">בית</a></li>
+            <li><a href="/about">אודותינו</a></li>
+            <li><a href="/blog" class="active">בלוג</a></li>
+            <li><a href="/contact">צרו קשר</a></li>
+            <li><a href="#" class="contact-btn" onclick="openDemoChat()">קבל הדגמה חינם</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <div class="content-wrapper">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>הבלוג שלנו</h1>
+                <p>מדריכים, טיפים ותובנות על אוטומציה עסקית ובינה מלאכותית</p>
+            </div>
+
+            <!-- Blog Filters -->
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">הכל</button>
+                <button class="filter-btn" data-filter="automation">אוטומציה</button>
+                <button class="filter-btn" data-filter="ai">בינה מלאכותית</button>
+                <button class="filter-btn" data-filter="business">עסקים</button>
+                <button class="filter-btn" data-filter="guides">מדריכים</button>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+                <!-- Featured Post -->
+                <article class="blog-post featured-post" data-category="automation">
+                    <div class="post-image">🚀</div>
+                    <div class="post-content">
+                        <span class="post-category">אוטומציה</span>
+                        <h2 class="post-title">המדריך המלא לאוטומציה עסקית בעסקים קטנים</h2>
+                        <p class="post-excerpt">גלו איך אוטומציה יכולה לחסוך לכם זמן יקר, להקטין טעויות אנוש ולהגדיל את הרווחים שלכם. מדריך שלב אחר שלב עם דוגמאות מעולם האמיתי.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="fas fa-calendar"></i> 20 בינואר 2025</span>
+                            <a href="/blogs/automation_for_small_buissness" class="read-more">קרא עוד <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Regular Posts -->
+                <article class="blog-post" data-category="ai">
+                    <div class="post-image">🤖</div>
+                    <div class="post-content">
+                        <span class="post-category">בינה מלאכותית</span>
+                        <h3 class="post-title">איך לבחור בין הסוכנים הדיגיטליים השונים?</h3>
+                        <p class="post-excerpt">מדריך להבנת ההבדלים בין סוכני המכירות, התפעול והתמיכה, ואיך לבחור את הסוכן המתאים לעסק שלכם.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="fas fa-calendar"></i> 18 בינואר 2025</span>
+                            <a href="/blogs/how_to_choose_your_ai_agent" class="read-more">קרא עוד <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-category="business">
+                    <div class="post-image">💼</div>
+                    <div class="post-content">
+                        <span class="post-category">עסקים</span>
+                        <h3 class="post-title">5 סימנים שהעסק שלכם זקוק לאוטומציה</h3>
+                        <p class="post-excerpt">מתי בדיוק כדאי להתחיל לחשוב על אוטומציה? אלה הסימנים שמעידים שהגיע הזמן לשדרג.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="fas fa-calendar"></i> 15 בינואר 2025</span>
+                            <a href="/blogs/5_signs_you_need_automation" class="read-more">קרא עוד <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-category="guides">
+                    <div class="post-image">📱</div>
+                    <div class="post-content">
+                        <span class="post-category">מדריכים</span>
+                        <h3 class="post-title">אוטומציית WhatsApp Business - מדריך מלא</h3>
+                        <p class="post-excerpt">למדו איך להקים מערכת מענה אוטומטי חכמה ב-WhatsApp Business שתחסוך לכם שעות של עבודה.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="fas fa-calendar"></i> 12 בינואר 2025</span>
+                            <a href="/blogs/whatsapp_automation_guide" class="read-more">קרא עוד <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-category="ai">
+                    <div class="post-image">⚡</div>
+                    <div class="post-content">
+                        <span class="post-category">בינה מלאכותית</span>
+                        <h3 class="post-title">מיתוסים נפוצים על AI בעסקים קטנים</h3>
+                        <p class="post-excerpt">נפיל את המיתוסים הנפוצים ביותר על בינה מלאכותית ונסביר למה AI נגישה יותר ממה שחשבתם.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="fas fa-calendar"></i> 10 בינואר 2025</span>
+                            <a href="/blogs/ai_myths_small_business" class="read-more">קרא עוד <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-category="business">
+                    <div class="post-image">📊</div>
+                    <div class="post-content">
+                        <span class="post-category">עסקים</span>
+                        <h3 class="post-title">מדידת ROI באוטומציה עסקית</h3>
+                        <p class="post-excerpt">איך לחשב בדיוק כמה כסף חוסכת לכם האוטומציה ומתי תראו החזר על ההשקעה.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="fas fa-calendar"></i> 8 בינואר 2025</span>
+                            <a href="/blogs/roi_in_automation" class="read-more">קרא עוד <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-category="automation">
+                    <div class="post-image">🔄</div>
+                    <div class="post-content">
+                        <span class="post-category">אוטומציה</span>
+                        <h3 class="post-title">אינטגרציה עם מערכות CRM קיימות</h3>
+                        <p class="post-excerpt">מדריך טכני לחיבור הסוכנים הדיגיטליים למערכות ה-CRM הפופולריות בישראל.</p>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="fas fa-calendar"></i> 5 בינואר 2025</span>
+                            <a href="/blogs/crm_integration" class="read-more">קרא עוד <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Blog filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const blogPosts = document.querySelectorAll('.blog-post');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    blogPosts.forEach(post => {
+                        if (filter === 'all' || post.getAttribute('data-category') === filter) {
+                            post.classList.remove('hidden');
+                            post.style.display = '';
+                        } else {
+                            post.classList.add('hidden');
+                            post.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Newsletter form handler
+            document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('.newsletter-input').value;
+                
+                if (email) {
+                    alert('תודה! נוסיף אותך לרשימת התפוצה שלנו');
+                    this.reset();
+                }
+            });
+
+            // Add hover effects to blog posts
+            blogPosts.forEach(post => {
+                post.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                post.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+        });
+
+        // Animate elements on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.blog-post');
+            
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Initialize animation on scroll
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section company-info">
+                    <div class="footer-logo">
+                        <h3>Bizmate</h3>
+                        <span class="footer-tagline">השותף העסקי החכם שלכם</span>
+                    </div>
+                    <p class="company-description">
+                        פתרונות בינה מלאכותית מתקדמים לעסקים קטנים ובינוניים בישראל. 
+                        אנחנו כאן כדי לעזור לכם לצמוח ולהצליח עם טכנולוגיה חכמה ופשוטה.
+                    </p>
+                </div>
+
+                <div class="footer-section contact-info">
+                    <h4>צרו קשר</h4>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span class="contact-text">053-4202016</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span class="contact-text">bizmate@bizmate-automation.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span class="contact-text">תל אביב, ישראל</span>
+                    </div>
+                </div>
+
+                <div class="footer-section quick-links">
+                    <h4>קישורים מהירים</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">מי אנחנו</a></li>
+                        <li><a href="#privacy">מדיניות פרטיות</a></li>
+                        <li><a href="#terms">תנאי שימוש</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section social-media">
+                    <h4>עקבו אחרינו</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon facebook" aria-label="Facebook">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-icon instagram" aria-label="Instagram">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-icon whatsapp" aria-label="WhatsApp">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="WhatsApp" width="24" height="24">
+                        </a>
+                        <a href="#" class="social-icon tiktok" aria-label="TikTok">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2025 Bizmate. כל הזכויות שמורות.</p>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="#privacy">מדיניות פרטיות</a>
+                        <span class="separator">|</span>
+                        <a href="#terms">תנאי שימוש</a>
+                        <span class="separator">|</span>
+                        <a href="#cookies">מדיניות עוגיות</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- WhatsApp Chat Button -->
+     <div class="whatsapp-chat">
+        <a href="https://wa.me/972534202016?text=היי, אני מעוניין לקבל מידע על הסוכנים הדיגיטליים של Bizmate" 
+           target="_blank" 
+           class="whatsapp-btn"
+           aria-label="התחל עכשיו עם הסוכן שלך">
+            <span class="whatsapp-icon">💬</span>
+            <span class="whatsapp-text">התחל עכשיו עם הסוכן שלך</span>
+        </a>
+    </div>
+
+    <!-- Mobile Bot Buttons -->
+    <div class="mobile-bot-buttons">
+        <button class="bot-btn" onclick="openDemoChat()" aria-label="קבל הדגמה חינם">
+            🤖
+        </button>
+        <a href="https://wa.me/972534202016?text=היי, אני מעוניין לקבל מידע על הסוכנים הדיגיטליים של Bizmate" 
+           target="_blank" 
+           class="whatsapp-btn"
+           aria-label="התחל עכשיו עם הסוכן שלך">
+            <span class="whatsapp-icon">💬</span>
+        </a>
+    </div>
+</body>
+</html>
+    
+    
