@@ -541,6 +541,41 @@ function showChatDialog(agentName) {
             closeChatDialog();
         }
     }, { passive: true });
+
+
+    // Hide accessibility button on mobile when chat opens
+    if (window.innerWidth <= 768) {
+        function hideAccessibilityWidget() {
+            const accessibilityWidget = document.querySelector('#sienna-widget') || 
+                                      document.querySelector('[data-sienna]') || 
+                                      document.querySelector('.sienna-widget') ||
+                                      document.querySelector('.accessibility-widget') ||
+                                      document.querySelector('iframe[src*="sienna"]') ||
+                                      document.querySelector('div[id*="sienna"]') ||
+                                      document.querySelector('div[class*="sienna"]') ||
+                                      document.querySelector('[class*="widget"]') ||
+                                      document.querySelector('div[style*="position: fixed"]');
+            
+            if (accessibilityWidget) {
+                const currentDisplay = window.getComputedStyle(accessibilityWidget).display;
+                accessibilityWidget.setAttribute('data-original-display', currentDisplay);
+                accessibilityWidget.style.display = 'none';
+                // Store reference for later restoration
+                window.hiddenAccessibilityWidget = accessibilityWidget;
+                return true;
+            }
+            return false;
+        }
+        
+        // Try immediately
+        if (!hideAccessibilityWidget()) {
+            // If not found, try again after a short delay
+            setTimeout(hideAccessibilityWidget, 100);
+            setTimeout(hideAccessibilityWidget, 500);
+            setTimeout(hideAccessibilityWidget, 1000);
+        }
+    }
+    
     
     // Focus input after small delay
     setTimeout(() => {
@@ -560,6 +595,36 @@ function closeChatDialog() {
     const chatContainer = document.getElementById('chatContainer');
     if (chatContainer) {
         chatContainer.remove();
+    }
+
+    if (window.innerWidth <= 768) {
+        // First try to restore from stored reference
+        if (window.hiddenAccessibilityWidget) {
+            const originalDisplay = window.hiddenAccessibilityWidget.getAttribute('data-original-display') || 'block';
+            window.hiddenAccessibilityWidget.style.display = originalDisplay;
+            window.hiddenAccessibilityWidget.removeAttribute('data-original-display');
+            window.hiddenAccessibilityWidget = null;
+        } else {
+            // Fallback: search for the widget again and force it to show
+            const accessibilityWidget = document.querySelector('#sienna-widget') || 
+                                      document.querySelector('[data-sienna]') || 
+                                      document.querySelector('.sienna-widget') ||
+                                      document.querySelector('.accessibility-widget') ||
+                                      document.querySelector('iframe[src*="sienna"]') ||
+                                      document.querySelector('div[id*="sienna"]') ||
+                                      document.querySelector('div[class*="sienna"]') ||
+                                      document.querySelector('[class*="widget"]') ||
+                                      document.querySelector('div[style*="position: fixed"]');
+            
+            if (accessibilityWidget) {
+                const originalDisplay = accessibilityWidget.getAttribute('data-original-display') || 'block';
+                accessibilityWidget.style.display = originalDisplay;
+                accessibilityWidget.removeAttribute('data-original-display');
+                // Force visibility
+                accessibilityWidget.style.visibility = 'visible';
+                accessibilityWidget.style.opacity = '1';
+            }
+        }
     }
 }
 
