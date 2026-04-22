@@ -1,882 +1,1562 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bizmate Automation - סוכני AI לעסקים | תמיכה ותפעול | ישראל</title>
-    <meta name="description" content="סוכני AI חכמים לעסקים בישראל - אוטומציה לתמיכה ותפעול 24/7, ללא ידע טכני נדרש. פתרונות מותאמים אישית לעסק שלכם.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="./logo.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildQuote – Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- SEO and Sitemap -->
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Bizmate Automation">
-    <meta name="keywords" content="בינה מלאכותית, אוטומציה עסקית, סוכן דיגיטלי, תמיכה, תפעול, ישראל, עסקים קטנים, CRM">
-    <link rel="canonical" href="https://blog.bizmate-automation.com/">
-    <meta name="facebook-domain-verification" content="kdta6589cwn1v4o7am95erkr9xhky4" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blog.bizmate-automation.com/">
-    <meta property="og:title" content="Bizmate Automation - סוכני AI לעסקים | תמיכה ותפעול | ישראל">
-    <meta property="og:description" content="סוכני AI חכמים לעסקים בישראל - אוטומציה לתמיכה ותפעול 24/7, ללא ידע טכני נדרש. פתרונות מותאמים אישית לעסק שלכם.">
-    <meta property="og:image" content="https://blog.bizmate-automation.com/logo.png">
-    <meta name="geo.region" content="IL-TA">
-    <meta name="geo.placename" content="Tel Aviv">
-
-    <link rel="icon" href="https://blog.bizmate-automation.com/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="https://blog.bizmate-automation.com/favicon-32x32.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="https://blog.bizmate-automation.com/favicon-16x16.png" type="image/png" sizes="16x16">
-    <link rel="apple-touch-icon" href="https://blog.bizmate-automation.com/apple-touch-icon.png" sizes="180x180">
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KF7MJ5ZF');</script>
-    <!-- End Google Tag Manager -->
-   
-    <!-- Schema.org LocalBusiness Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Bizmate Automation",
-        "alternateName": "ביזמייט",
-        "description": "סוכני AI מתקדמים לתמיכה בלקוחות וניהול תפעול עבור עסקים קטנים ובינוניים בישראל",
-        "serviceType": "AI Customer Support and Operations",
-        "url": "https://blog.bizmate-automation.com",
-        "logo": "https://blog.bizmate-automation.com/favicon-32x32.png",
-        "image": "https://blog.bizmate-automation.com/favicon-32x32.png",
-        "foundingDate": "2024",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "IL",
-            "addressLocality": "Israel"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "32.0853",
-            "longitude": "34.7818"
-        },
-        "areaServed": {
-            "@type": "Country",
-            "name": "Israel"
-        },
-        "availableLanguage": ["he", "en"],
-        "currenciesAccepted": "ILS",
-        "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
-        "priceRange": "$$",
-        "telephone": "+972-53-420-2016",
-        "email": "bizmate@bizmate-automation.com",
-        "openingHours": [],
-        "serviceType": "Digital AI Agents",
-        "brand": {
-            "@type": "Bizmate Automation",
-            "name": "Bizmate Automation",
-            "logo": "https://blog.bizmate-automation.com/logo.png"
-        },
-        "contactPoint": [
-            {
-                "@type": "ContactPoint",
-                "telephone": "+972-53-420-2016",
-                "contactType": "customer service",
-                "availableLanguage": ["Hebrew", "English"],
-                "areaServed": "IL"
-            },
-            {
-                "@type": "ContactPoint",
-                "url": "https://wa.me/972501234567",
-                "contactType": "customer service",
-                "availableLanguage": ["Hebrew", "English"],
-                "areaServed": "IL"
-            }
-        ],
-        "sameAs": [
-            "https://www.instagram.com/bizmate_automation?igsh=b2VxeXlsNnF0ZDI1&utm_source=qr",
-            "https://www.facebook.com/BizmateAutomation/",
-        ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "AI Digital Agents Services",
-            "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Operations AI Agent - Max",
-                    "description": "סוכן AI לתפעול וניהול - מקס מנהל תפעול",
-                    "serviceType": "AI Operations Automation"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Support AI Agent - Noah",
-                    "description": "סוכן AI לתמיכה ושירות לקוחות - נואה מומחה תמיכה",
-                    "serviceType": "AI Customer Support"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Business Process Automation",
-                    "description": "אוטומציה של תהליכים עסקיים",
-                    "serviceType": "Process Automation"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "CRM Integration Services",
-                    "description": "שירותי אינטגרציה למערכות CRM",
-                    "serviceType": "CRM Integration"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "WhatsApp Business Automation",
-                    "description": "אוטומציה לווטסאפ ביזנס",
-                    "serviceType": "WhatsApp Automation"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Data Analytics & Reporting",
-                    "description": "ניתוח נתונים ודוחות מתקדמים",
-                    "serviceType": "Business Intelligence"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Custom AI Solutions",
-                    "description": "פתרונות AI מותאמים אישית",
-                    "serviceType": "Custom AI Development"
-                }
-            }
-            ]
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "127",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "review": [
-            {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "דני כהן"
-                },
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                },
-                "reviewBody": "שני סוכנים של Bizmate שינו לי את העסק! עכשיו אני יכול להתמקד בפיתוח במקום בניהול יומיומי."
-            },
-            {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "שרה לוי"
-                },
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                },
-                "reviewBody": "שירות מעולה ותמיכה 24/7. הסוכן עוזר לי לנהל את כל הלידים בצורה חכמה ויעילה."
-            }
-        ],
-        "keywords": "בינה מלאכותית, אוטומציה עסקית, סוכן דיגיטלי, תמיכה, תפעול, ישראל, עסקים קטנים, CRM, AI automation, digital transformation"
+    :root {
+      --blue:   #006FFD;
+      --blue-lg:#EAF2FF;
+      --dark:   #1F2024;
+      --muted:  #71727A;
+      --border: #EAEAEA;
+      --bg:     #F8F8F8;
+      --white:  #FFFFFF;
+      --green:  #00B087;
+      --orange: #FF9F43;
+      --red:    #FF4B55;
     }
-    </script>
-    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WMXTNVZK9"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-2WMXTNVZK9');
-    </script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    body {
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(135deg, #e8f0fe 0%, #f3e8ff 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    /* ── Phone shell ─────────────────────────────────────────── */
+    .phone {
+      width: 375px;
+      height: 812px;
+      background: var(--white);
+      border-radius: 40px;
+      border: 1px solid #DCDCDC;
+      box-shadow: 0 32px 80px rgba(0,0,0,.18), 0 8px 24px rgba(0,0,0,.08);
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    /* ── Screens ─────────────────────────────────────────────── */
+    .screen {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+      transform: translateX(100%);
+      transition: transform .35s cubic-bezier(.4,0,.2,1);
+      will-change: transform;
+      overflow: hidden;
+    }
+    .screen.active       { transform: translateX(0); }
+    .screen.slide-left   { transform: translateX(-30%); opacity:.6; transition: transform .35s cubic-bezier(.4,0,.2,1), opacity .35s; }
+
+    /* ── Shared header ───────────────────────────────────────── */
+    .top-bar {
+      height: 56px;
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 2;
+    }
+    .top-bar-title { flex: 1; text-align: center; font-size: 18px; font-weight: 700; color: var(--dark); }
+    .icon-btn {
+      width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; border: none; background: transparent; border-radius: 50%;
+      transition: background .15s;
+    }
+    .icon-btn:hover { background: var(--blue-lg); }
+    .icon-btn svg { width: 22px; height: 22px; }
+
+    /* ── Bottom nav ──────────────────────────────────────────── */
+    .nav-bar {
+      height: 70px;
+      background: var(--white);
+      border-top: 1px solid #EDEDED;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      padding-top: 10px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 10;
+    }
+    .nav-item {
+      display: flex; flex-direction: column; align-items: center; gap: 4px;
+      cursor: pointer; min-width: 60px;
+    }
+    .nav-item span { font-size: 11px; font-weight: 600; color: var(--muted); }
+    .nav-item.active span { color: var(--blue); }
+    .nav-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--blue); margin-top: 2px; }
+    .nav-icon { width: 22px; height: 22px; }
+
+    /* ── FAB ─────────────────────────────────────────────────── */
+    .fab {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 2px 8px rgba(0,111,253,.25);
+      display: flex; align-items: center; justify-content: center;
+      cursor: default; border: none; z-index: 20;
+    }
+    .fab svg { width: 24px; height: 24px; }
+
+    /* ── Status switch ───────────────────────────────────────── */
+    .status-switch {
+      margin: 12px 24px 0;
+      height: 40px;
+      background: #F0F0F0;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      padding: 3px;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .status-pill {
+      flex: 1; height: 34px; display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 500; color: var(--muted);
+      border-radius: 17px; cursor: pointer; transition: color .2s; user-select: none;
+      position: relative; z-index: 2;
+    }
+    .status-pill.active { font-weight: 600; color: var(--dark); }
+    .switch-track {
+      position: absolute;
+      height: 34px; border-radius: 17px;
+      background: var(--white);
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+      transition: left .25s cubic-bezier(.4,0,.2,1), width .25s;
+      top: 3px; left: 3px;
+      z-index: 1;
+    }
+
+    /* ── Filter pills ────────────────────────────────────────── */
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      padding: 10px 24px 0;
+      flex-shrink: 0;
+    }
+    .filter-pill {
+      height: 44px;
+      border-radius: 14px;
+      border: 1px solid #E8E9F1;
+      background: var(--white);
+      box-shadow: 0 1px 2px rgba(0,0,0,.04);
+      display: flex; align-items: center; gap: 6px;
+      padding: 0 12px;
+      font-size: 12px; font-weight: 600; color: var(--dark);
+      cursor: pointer; white-space: nowrap;
+    }
+    .filter-pill svg { width: 14px; height: 14px; color: var(--muted); flex-shrink: 0; }
+
+    /* ── Content area ────────────────────────────────────────── */
+    .content { flex: 1; overflow-y: auto; padding-bottom: 8px; }
+    .content::-webkit-scrollbar { display: none; }
+
+    /* ── Empty state ─────────────────────────────────────────── */
+    .empty-state {
+      display: flex; flex-direction: column; align-items: center;
+      padding-top: 50px;
+    }
+    .empty-illus-bg {
+      width: 100px; height: 100px;
+      background: var(--blue-lg);
+      border-radius: 20px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .empty-illus-bg svg { width: 48px; height: 48px; }
+    .empty-title { font-size: 18px; font-weight: 700; color: var(--dark); margin-top: 22px; }
+    .empty-sub   { font-size: 14px; color: var(--muted); margin-top: 8px; text-align: center; padding: 0 40px; line-height: 1.5; }
+    .cta-btn {
+      display: block;
+      margin: 28px auto 0;
+      width: 170px; height: 44px;
+      border-radius: 12px;
+      background: var(--blue);
+      color: var(--white);
+      font-family: 'Rubik', sans-serif;
+      font-size: 14px; font-weight: 600;
+      border: none; cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,111,253,.3);
+      transition: transform .15s, box-shadow .15s;
+      flex-shrink: 0;
+    }
+    .cta-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,111,253,.4); }
+
+    /* ── Offer card ──────────────────────────────────────────── */
+    .offer-list { padding: 20px 24px 0; display: flex; flex-direction: column; gap: 12px; }
+    .offer-card {
+      background: #F8F9FE;
+      border-radius: 16px;
+      padding: 14px 16px 14px 16px;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      transition: box-shadow .15s, transform .15s;
+    }
+    .offer-card:hover { box-shadow: 0 4px 16px rgba(0,111,253,.1); transform: translateY(-1px); }
+    /* RTL: card-info is first → sits on RIGHT; card-cta is second → sits on LEFT */
+    .card-info { flex: 1; text-align: right; min-width: 0; }
+    .card-client { font-size: 16px; font-weight: 700; color: var(--dark); }
+    .card-desc   { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .card-badges { display: flex; gap: 6px; margin-top: 8px; justify-content: flex-start; flex-wrap: wrap; }
+    .cbadge {
+      height: 22px; border-radius: 11px;
+      padding: 0 10px; font-size: 11px; font-weight: 600;
+      display: inline-flex; align-items: center; white-space: nowrap;
+    }
+    .cbadge-approved { background: var(--white); border: 1px solid #29825A; color: #29825A; }
+    .cbadge-sent     { background: var(--white); border: 1px solid var(--blue); color: var(--blue); }
+    .cbadge-draft    { background: var(--white); border: 1px solid var(--muted); color: var(--muted); }
+    .cbadge-quote    { background: #E8E9F1; color: var(--muted); }
+    .cbadge-boq      { background: #EAF2FF; color: var(--blue); }
+    .card-cta-btn {
+      width: 100px; height: 44px; flex-shrink: 0;
+      border-radius: 14px;
+      border: 1.5px solid var(--blue);
+      background: rgba(0,111,253,.04);
+      color: var(--blue);
+      font-family: 'Rubik', sans-serif;
+      font-size: 13px; font-weight: 600;
+      cursor: pointer;
+      transition: background .15s;
+      white-space: nowrap;
+    }
+    .card-cta-btn:hover { background: var(--blue-lg); }
+
+    /* ── Subheader row ───────────────────────────────────────── */
+    .subheader-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 24px 0;
+    }
+    .subheader-title { font-size: 16px; font-weight: 700; color: #1A1A1A; }
+    .count-badge {
+      width: 32px; height: 32px; border-radius: 16px;
+      background: var(--blue);
+      box-shadow: 0 2px 6px rgba(0,111,253,.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 700; color: var(--white);
+    }
+
+    /* ══════════════════════════════════════════════════════════
+       SCREEN 2 – Create Offer
+    ══════════════════════════════════════════════════════════ */
+    .form-scroll { flex: 1; overflow-y: auto; padding: 16px 20px 100px; }
+    .form-scroll::-webkit-scrollbar { display: none; }
+
+    .section-label {
+      font-size: 13px; font-weight: 600; color: var(--muted);
+      margin-bottom: 8px; margin-top: 20px;
+    }
+    .section-label:first-child { margin-top: 4px; }
+
+    .input-field {
+      width: 100%;
+      height: 48px;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 0 14px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 14px; color: var(--dark);
+      outline: none;
+      transition: border-color .2s;
+      background: var(--white);
+      text-align: right;
+    }
+    .input-field:focus { border-color: var(--blue); }
+    textarea.input-field { height: 80px; padding: 12px 14px; resize: none; line-height: 1.5; }
+
+    .line-items-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 20px; margin-bottom: 10px;
+    }
+    .add-row-btn {
+      font-size: 13px; font-weight: 600; color: var(--blue);
+      background: none; border: none; cursor: pointer; font-family: 'Rubik', sans-serif;
+    }
+
+    .line-item {
+      display: grid;
+      grid-template-columns: 1fr 60px 70px 28px;
+      gap: 6px;
+      margin-bottom: 8px;
+      align-items: center;
+    }
+    .li-input {
+      height: 40px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 0 10px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 13px; color: var(--dark);
+      outline: none;
+      background: var(--white);
+      text-align: right;
+      transition: border-color .2s;
+    }
+    .li-input:focus { border-color: var(--blue); }
+    .li-delete {
+      width: 28px; height: 28px;
+      border: none; background: #FFF0F0; border-radius: 8px;
+      color: var(--red); font-size: 16px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .totals-box {
+      margin-top: 20px;
+      background: var(--blue-lg);
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .total-row { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); padding: 3px 0; }
+    .total-row.grand { font-size: 16px; font-weight: 700; color: var(--dark); padding-top: 10px; border-top: 1px solid #C5D9FF; margin-top: 8px; }
+
+    .bottom-actions {
+      position: absolute;
+      bottom: 70px;
+      left: 0; right: 0;
+      padding: 12px 20px;
+      background: linear-gradient(to top, var(--white) 70%, transparent);
+      display: flex; gap: 10px;
+    }
+    .btn-secondary {
+      flex: 1; height: 48px; border-radius: 12px;
+      border: 1.5px solid var(--blue); background: var(--white);
+      color: var(--blue); font-family: 'Rubik', sans-serif;
+      font-size: 14px; font-weight: 600; cursor: pointer;
+      transition: background .15s;
+    }
+    .btn-secondary:hover { background: var(--blue-lg); }
+    .btn-primary {
+      flex: 1.4; height: 48px; border-radius: 12px;
+      border: none; background: var(--blue);
+      color: var(--white); font-family: 'Rubik', sans-serif;
+      font-size: 14px; font-weight: 600; cursor: pointer;
+      box-shadow: 0 3px 12px rgba(0,111,253,.3);
+      transition: transform .15s;
+    }
+    .btn-primary:hover { transform: translateY(-1px); }
+
+    /* ══════════════════════════════════════════════════════════
+       SCREEN 3 – Offer Preview
+    ══════════════════════════════════════════════════════════ */
+    .preview-scroll { flex: 1; overflow-y: auto; padding: 16px 20px 100px; }
+    .preview-scroll::-webkit-scrollbar { display: none; }
+
+    .preview-doc {
+      background: var(--white);
+      border: 1px solid #E0E0E0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,.08);
+    }
+    .doc-header-band {
+      background: var(--blue);
+      padding: 20px;
+      color: var(--white);
+    }
+    .doc-company { font-size: 18px; font-weight: 700; }
+    .doc-tagline { font-size: 12px; opacity: .8; margin-top: 2px; }
+    .doc-meta {
+      display: flex; justify-content: space-between;
+      margin-top: 16px; font-size: 12px; opacity: .9;
+    }
+    .doc-body { padding: 16px 20px; }
+    .doc-section-title {
+      font-size: 11px; font-weight: 700; color: var(--blue);
+      text-transform: uppercase; letter-spacing: .8px;
+      margin-bottom: 6px; margin-top: 14px;
+    }
+    .doc-field { font-size: 14px; color: var(--dark); line-height: 1.6; }
+    .doc-divider { border: none; border-top: 1px solid var(--border); margin: 14px 0; }
+    .doc-table { width: 100%; border-collapse: collapse; }
+    .doc-table th {
+      font-size: 11px; font-weight: 600; color: var(--muted);
+      text-align: right; padding: 6px 0; border-bottom: 1px solid var(--border);
+    }
+    .doc-table td {
+      font-size: 13px; color: var(--dark);
+      padding: 10px 0; border-bottom: 1px dashed #F0F0F0;
+      text-align: right;
+      vertical-align: middle;
+    }
+    .doc-table td:last-child, .doc-table th:last-child { text-align: left; }
+    .doc-total-band {
+      background: var(--blue-lg);
+      padding: 14px 20px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .doc-total-label { font-size: 14px; font-weight: 600; color: var(--dark); }
+    .doc-total-val   { font-size: 20px; font-weight: 700; color: var(--blue); }
+    .doc-vat { font-size: 12px; color: var(--muted); margin-top: 2px; text-align: left; }
+    .doc-footer-note { padding: 14px 20px; font-size: 12px; color: var(--muted); text-align: center; }
+
+    /* ══════════════════════════════════════════════════════════
+       SCREEN 4 – Home with offer
+    ══════════════════════════════════════════════════════════ */
+    /* reuses shared styles */
+
+    /* ══════════════════════════════════════════════════════════
+       SCREEN 5 – Offer Detail
+    ══════════════════════════════════════════════════════════ */
+    .act-btn {
+      background: none; border: none; padding: 0;
+      font-family: 'Rubik', sans-serif; font-size: 15px; font-weight: 600;
+      color: var(--blue); cursor: pointer; min-width: 52px; text-align: right;
+    }
+
+    .detail-scroll { flex: 1; overflow-y: auto; }
+    .detail-scroll::-webkit-scrollbar { display: none; }
+
+    .det-tabs-wrap {
+      margin: 10px 20px 0;
+      background: #EFEFEF;
+      border-radius: 20px;
+      padding: 3px;
+      display: flex;
+    }
+    .det-tab {
+      flex: 1; height: 34px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Rubik', sans-serif; font-size: 12px; font-weight: 600;
+      border: none; border-radius: 17px; cursor: pointer;
+      background: transparent; color: var(--muted);
+      transition: background .2s, color .2s;
+      box-sizing: border-box;
+    }
+    .det-tab.active {
+      background: var(--white); color: var(--dark);
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      border: 1.5px solid #E0E0E0;
+    }
+
+    .det-client-line {
+      text-align: center; font-size: 14px; font-weight: 700;
+      color: var(--dark);
+      background: #F9FAFB;
+      border-radius: 10px;
+      margin: 8px 20px 2px;
+      padding: 9px 14px;
+    }
+
+    .det-stats-row { display: flex; gap: 10px; padding: 6px 20px 2px; }
+    .det-stat {
+      flex: 1; background: #EBF2FF; border-radius: 10px;
+      padding: 8px 12px; text-align: center;
+    }
+    .det-stat-val { font-size: 17px; font-weight: 700; color: var(--blue); }
+    .det-stat-lbl { font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+    .det-divider { height: 1px; background: #F0F0F0; margin: 4px 0; }
+
+    .det-cats-scroll {
+      max-height: 222px;
+      overflow-y: auto;
+      margin: 4px 0;
+      padding: 2px 0;
+    }
+    .det-cats-scroll::-webkit-scrollbar { width: 4px; }
+    .det-cats-scroll::-webkit-scrollbar-thumb { background: #D6DAE2; border-radius: 2px; }
+    .cat-row {
+      display: flex; align-items: center;
+      margin: 6px 20px;
+      padding: 11px 16px;
+      background: var(--white);
+      border: 1px solid #E8E9F1;
+      border-radius: 12px;
+      cursor: pointer;
+      gap: 10px;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .cat-row:hover { border-color: var(--blue); box-shadow: 0 2px 8px rgba(0,111,253,.08); }
+    .cat-row.active { border-color: var(--blue); box-shadow: 0 2px 8px rgba(0,111,253,.12); }
+    /* RTL: cat-text first → RIGHT; cat-left last → LEFT */
+    .cat-text { flex: 1; }
+    .cat-name  { font-size: 14px; font-weight: 600; color: var(--dark); text-align: right; }
+    .cat-count { font-size: 11px; color: var(--muted); text-align: right; margin-top: 2px; }
+    .cat-left  { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+    /* RTL inside cat-left: amount first → right, chevron last → left */
+    .cat-amount { font-size: 13px; font-weight: 700; color: var(--blue); white-space: nowrap; }
+    .cat-chev   { width: 16px; height: 16px; color: var(--blue); flex-shrink: 0; }
+
+    .sig-box-unsigned {
+      margin: 8px 20px;
+      border: 1.5px dashed var(--blue);
+      border-radius: 12px;
+      background: #F2F7FF;
+      padding: 14px 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    /* RTL: text first → RIGHT; pencil last → LEFT */
+    .sig-unsigned-text {
+      flex: 1; font-size: 13px; font-weight: 600;
+      color: var(--blue); text-align: right;
+    }
+    .sig-pencil { flex-shrink: 0; width: 20px; height: 20px; color: var(--blue); }
+
+    .sig-box-signed {
+      margin: 6px 20px;
+      border: 1.5px solid var(--blue);
+      border-radius: 12px;
+      background: #F2F7FF;
+      padding: 8px 14px 10px;
+    }
+    .sig-top-row {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 4px;
+    }
+    /* RTL: check first → RIGHT; label middle; pencil last → LEFT */
+    .sig-check {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--blue);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .sig-check svg { width: 12px; height: 12px; }
+    .sig-top-label {
+      flex: 1; font-size: 11px; font-weight: 600;
+      color: var(--blue); text-align: center;
+    }
+    .sig-pencil { flex-shrink: 0; width: 16px; height: 16px; color: var(--blue); }
+    .sig-name-text {
+      font-size: 17px; font-weight: 700; color: var(--dark);
+      text-align: center;
+      border-bottom: 1px solid #C9D7EA;
+      padding-bottom: 4px;
+      margin: 2px 40px 0;
+    }
+    .sig-date-text {
+      font-size: 10px; color: var(--muted);
+      text-align: center; margin-top: 4px;
+    }
+
+    .order-btn-wrap { padding: 6px 20px 8px; }
+    .order-btn {
+      width: 100%; height: 40px;
+      border: 1.5px solid var(--blue); border-radius: 10px;
+      background: var(--white);
+      font-family: 'Rubik', sans-serif; font-size: 12px; font-weight: 700;
+      color: var(--blue); cursor: pointer;
+    }
+    .order-btn:hover { background: #F2F7FF; }
+
+    .det-illus {
+      display: block;
+      width: calc(100% - 40px);
+      margin: 12px 20px 20px;
+      max-height: 220px;
+      object-fit: contain;
+    }
+
+    /* ── Gypsum order screen (s6) ────────────────────────────── */
+    .gyp-scroll { flex: 1; overflow-y: auto; padding: 12px 16px 16px; }
+    .gyp-scroll::-webkit-scrollbar { display: none; }
+    .gyp-head {
+      display: flex; align-items: center; gap: 10px;
+      background: #EFF5FF; border-radius: 12px;
+      padding: 10px 14px;
+    }
+    .gyp-head-text { flex: 1; text-align: right; min-width: 0; }
+    .gyp-head-title {
+      font-size: 14px; font-weight: 700; color: var(--dark);
+      display: flex; align-items: center; gap: 6px;
+      justify-content: flex-start;
+    }
+    .gyp-head-sub   { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .gyp-head-icon  { width: 20px; height: 20px; color: var(--blue); flex-shrink: 0; }
+    .gyp-pill {
+      background: var(--blue); color: var(--white);
+      font-size: 11px; font-weight: 700;
+      padding: 5px 12px; border-radius: 999px;
+      flex-shrink: 0;
+    }
+    .gyp-selectall {
+      display: flex; align-items: center;
+      margin-top: 10px;
+      padding: 12px 14px;
+      background: #F8F9FE;
+      border: 1px solid #D4D6DD;
+      border-radius: 12px;
+      gap: 10px; cursor: pointer;
+    }
+    .gyp-selectall-text { font-size: 14px; font-weight: 700; color: var(--dark); }
+    .gyp-selectall-sub  { flex: 1; text-align: left; font-size: 11px; color: var(--muted); }
+    .gyp-selectall-icon {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--white); color: var(--blue);
+      border: 1.5px solid var(--blue);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .gyp-item {
+      display: flex; align-items: center; gap: 12px;
+      margin-top: 10px;
+      padding: 12px 14px;
+      border: 1.5px solid #D4D6DD; border-radius: 12px;
+      background: var(--white);
+      cursor: pointer;
+      transition: border-color .15s;
+    }
+    .gyp-item.selected { border-color: var(--blue); border-width: 2px; padding: 11.5px 13.5px; }
+    .gyp-item-radio {
+      width: 22px; height: 22px; border-radius: 50%;
+      border: 2px solid #C9D0DB;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--white);
+      box-sizing: border-box;
+    }
+    .gyp-item.selected .gyp-item-radio {
+      border-color: var(--blue);
+      background: var(--white);
+    }
+    .gyp-item.selected .gyp-item-radio::after {
+      content: ''; width: 12px; height: 12px; border-radius: 50%; background: var(--blue);
+    }
+    .gyp-item-text { flex: 1; text-align: right; min-width: 0; }
+    .gyp-item-name { font-size: 14px; font-weight: 700; color: var(--dark); }
+    .gyp-item-sub  { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .gyp-item-price {
+      font-size: 15px; font-weight: 700; color: var(--blue);
+      flex-shrink: 0;
+      min-width: 52px; text-align: left;
+    }
+    .gyp-item:not(.selected) .gyp-item-price { color: #A0A4AD; }
+    .gyp-footer {
+      flex-shrink: 0;
+      background: var(--white);
+      border-top: 1px solid #EDEFF3;
+      padding: 12px 16px 16px;
+    }
+    .gyp-summary {
+      background: #EFF5FF; border-radius: 12px;
+      padding: 12px 14px;
+      display: flex; align-items: center;
+      margin-bottom: 10px;
+    }
+    .gyp-sum-left { text-align: right; }
+    .gyp-sum-lbl  { font-size: 11px; color: var(--muted); }
+    .gyp-sum-val  { font-size: 18px; font-weight: 700; color: var(--blue); margin-top: 2px; }
+    .gyp-sum-right { flex: 1; text-align: left; font-size: 12px; color: var(--muted); }
+    .gyp-cta {
+      width: 100%; height: 48px;
+      background: var(--blue); color: var(--white);
+      border: none; border-radius: 12px;
+      font-family: 'Rubik', sans-serif; font-size: 14px; font-weight: 700;
+      cursor: pointer;
+    }
+    .gyp-cta:hover { background: #005FE0; }
+
+    /* ── Toasts ──────────────────────────────────────────────── */
+    .toast {
+      position: absolute;
+      bottom: 90px; left: 20px; right: 20px;
+      background: var(--dark);
+      color: var(--white);
+      padding: 14px 16px;
+      border-radius: 14px;
+      font-size: 13px; font-weight: 500;
+      box-shadow: 0 8px 24px rgba(0,0,0,.25);
+      z-index: 100;
+      display: flex; align-items: center; gap: 10px;
+      transform: translateY(20px); opacity: 0;
+      transition: transform .3s, opacity .3s;
+      pointer-events: none;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    .toast-icon { width: 22px; height: 22px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+    /* ── Progress indicator ──────────────────────────────────── */
+    .progress-bar {
+      display: flex; gap: 6px; justify-content: center;
+      padding: 10px 0 4px;
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      pointer-events: none;
+    }
+    .prog-dot { width: 6px; height: 6px; border-radius: 3px; background: #DDD; transition: all .3s; }
+    .prog-dot.active { width: 20px; background: var(--blue); }
+
+    /* ── Success overlay ─────────────────────────────────────── */
+    .success-overlay {
+      position: absolute; inset: 0; z-index: 50;
+      background: rgba(255,255,255,.95);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity .3s;
+      backdrop-filter: blur(8px);
+    }
+    .success-overlay.show { opacity: 1; pointer-events: all; }
+    .success-ring {
+      width: 90px; height: 90px; border-radius: 50%;
+      background: linear-gradient(135deg, #006FFD, #4DA3FF);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 8px 32px rgba(0,111,253,.4);
+      margin-bottom: 20px;
+    }
+    .success-ring svg { width: 44px; height: 44px; }
+    .success-title { font-size: 22px; font-weight: 700; color: var(--dark); }
+    .success-sub   { font-size: 14px; color: var(--muted); margin-top: 8px; text-align: center; padding: 0 40px; line-height: 1.5; }
+    .success-btn {
+      margin-top: 28px;
+      width: 200px; height: 50px; border-radius: 14px;
+      background: var(--blue); color: var(--white);
+      font-family: 'Rubik', sans-serif; font-size: 15px; font-weight: 600;
+      border: none; cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,111,253,.35);
+      transition: transform .15s;
+    }
+    .success-btn:hover { transform: translateY(-1px); }
+  </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF7MJ5ZF"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="bg-effect">
-        <div class="bg-circle circle-1"></div>
-        <div class="bg-circle circle-2"></div>
-        <div class="bg-circle circle-3"></div>
-        <div class="bg-circle circle-4"></div>
-        <div class="bg-circle circle-5"></div>
+
+<div class="phone" id="phone">
+
+  <!-- ── SCREEN 1: Home – Empty State ──────────────────────── -->
+  <div class="screen" id="s1">
+    <div class="top-bar">
+      <!-- RTL: first child → RIGHT -->
+      <button class="icon-btn" title="עזרה">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+          <line x1="12" y1="17" x2="12.01" y2="17" stroke-width="2.5"/>
+        </svg>
+      </button>
+      <div class="top-bar-title">שלום, אבי</div>
+      <div style="width:36px"></div><!-- spacer balances the icon, keeps title centered -->
     </div>
 
-    <nav>
-        <div class="logo">
-            Bizmate
+    <div class="subheader-row">
+      <!-- RTL: first → RIGHT: title + badge -->
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div class="count-badge">0</div>
+        <div class="subheader-title">ההצעות שלי</div>
+      </div>
+      <!-- RTL: last → LEFT: search -->
+      <button class="icon-btn" title="חיפוש">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="status-switch" id="sw1">
+      <div class="switch-track" id="sw1-track"></div>
+      <div class="status-pill active" data-sw="sw1" data-idx="0">הכל</div>
+      <div class="status-pill" data-sw="sw1" data-idx="1">טיוטה</div>
+      <div class="status-pill" data-sw="sw1" data-idx="2">נשלח</div>
+      <div class="status-pill" data-sw="sw1" data-idx="3">אושר</div>
+    </div>
+
+    <div class="filter-row">
+      <!-- RTL: first → RIGHT: סוג (narrow) -->
+      <div class="filter-pill">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 1H2a1 1 0 00-.8 1.6L6 9v5l4-2V9l4.8-6.4A1 1 0 0014 1z"/></svg>
+        סוג
+        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+      </div>
+      <!-- RTL: second → LEFT: חדש ← ישן (wide) -->
+      <div class="filter-pill">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="0" y1="4" x2="16" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="4" y1="12" x2="12" y2="12"/></svg>
+        חדש ← ישן
+        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="empty-state">
+        <div class="empty-illus-bg">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#006FFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="24" height="32" rx="3"/>
+            <path d="M10 12h12M10 17h12M10 22h8"/>
+            <path d="M22 28l6-6 6 6M28 22v10"/>
+          </svg>
         </div>
-        <ul class="nav-links">
-                <li><a href="/">בית</a></li>
-                <li><a href="/about" class="active">אודותינו</a></li>
-                <li><a href="/blog">בלוג</a></li>
-                <li><a href="/contact">צרו קשר</a></li>
-                <li><a href="#" class="contact-btn" onclick="openDemoChat()">קבל הדגמה חינם</a></li>
-                </ul>
-            </nav>
-           
-        </ul>
+        <div class="empty-title">אין הצעות עדיין</div>
+        <div class="empty-sub">כאן יופיעו ההצעות שלך ברגע שתיצור אותן</div>
+        <button class="cta-btn" onclick="goTo('s2')">+ צור הצעה חדשה</button>
+      </div>
+    </div>
+
+    <button class="fab">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    </button>
+
+    <nav class="nav-bar">
+      <div class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="#006FFD" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/>
+          <rect x="9" y="14" width="6" height="7" fill="white" rx="1"/>
+        </svg>
+        <span>בית</span>
+        <div class="nav-dot"></div>
+      </div>
+      <div class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/>
+        </svg>
+        <span>הגדרות</span>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ── SCREEN 2: Create Offer ─────────────────────────────── -->
+  <div class="screen" id="s2">
+    <div class="top-bar">
+      <button class="icon-btn" onclick="goBack('s2','s4')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="top-bar-title">הצעת מחיר חדשה</div>
+      <div style="width:36px"></div>
+    </div>
+
+    <div class="form-scroll" id="form-scroll">
+      <div class="section-label">פרטי לקוח</div>
+      <input class="input-field" id="f-client" type="text" placeholder="שם הלקוח" />
+
+      <div class="section-label" style="margin-top:10px">כתובת הפרויקט</div>
+      <input class="input-field" id="f-addr" type="text" placeholder="רחוב, עיר" />
+
+      <div class="section-label" style="margin-top:10px">תיאור העבודה</div>
+      <textarea class="input-field" id="f-desc" placeholder="תאר את הפרויקט בקצרה..."></textarea>
+
+      <div class="line-items-header">
+        <button class="add-row-btn" onclick="addLineItem()">+ הוסף פריט</button>
+        <div class="section-label" style="margin:0">פריטים ועלויות</div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 60px 70px 28px;gap:6px;margin-bottom:6px;padding:0 2px;">
+        <span style="font-size:11px;color:var(--muted);text-align:right;font-weight:600">תיאור</span>
+        <span style="font-size:11px;color:var(--muted);text-align:center;font-weight:600">כמות</span>
+        <span style="font-size:11px;color:var(--muted);text-align:right;font-weight:600">מחיר ₪</span>
+        <span></span>
+      </div>
+
+      <div id="line-items-container"></div>
+
+      <div class="totals-box" id="totals-box">
+        <div class="total-row"><span>סכום ביניים</span><span id="t-sub">₪0</span></div>
+        <div class="total-row"><span>מע"מ (18%)</span><span id="t-vat">₪0</span></div>
+        <div class="total-row grand"><span>סה"כ לתשלום</span><span id="t-total">₪0</span></div>
+      </div>
+    </div>
+
+    <div class="bottom-actions">
+      <button class="btn-secondary" onclick="saveDraft()">שמור טיוטה</button>
+      <button class="btn-primary" onclick="previewOffer()">תצוגה מקדימה ←</button>
+    </div>
+
+    <nav class="nav-bar">
+      <div class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="#006FFD"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><rect x="9" y="14" width="6" height="7" fill="white" rx="1"/></svg>
+        <span>בית</span>
+        <div class="nav-dot"></div>
+      </div>
+      <div class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        <span>הגדרות</span>
+      </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bizmate השותף העסקי החכם שלך</h1>
-            <p>סוכני AI חכמים שיבצעו את התמיכה והתפעול בשבילכם – באופן אוטומטי.</p>
-            <div class="cta-buttons">
-                <a href="#solutions" class="btn btn-primary" onclick="scrollToSolutions()">גלה את הסוכן שמתאים לעסק שלך</a>
-                <a href="#about" class="btn btn-secondary" onclick="scrollToAbout()">למד עוד</a>
-            </div>
-        </div>
-        
-        <div class="hero-visual">
-            <div class="robot-container">
-                <div class="robot"></div>
-                <div class="feature-badge badge-1">ללא הגדרות נדרשות</div>
-                <div class="feature-badge badge-2">עד 50% חיסכון בעלויות</div>
-                <div class="feature-badge badge-3">אוטומציה 24/7</div>
-            </div>
-        </div>
-    </section>
+    <!-- toast -->
+    <div class="toast" id="toast2">
+      <div class="toast-icon"><svg viewBox="0 0 16 16" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8l4 4 8-8"/></svg></div>
+      הטיוטה נשמרה!
+    </div>
+  </div>
 
-    <!-- About Us Section -->
-    <section id="about" class="about-section">
-        <div class="about-container">
-            <div class="about-content">
-                <div class="about-text-index">
-                    <div class="section-header">
-                        <h2>מי אנחנו ומה אנחנו מציעים</h2>
-                        <p>אנחנו מאמינים שבינה מלאכותית צריכה להיות נגישה לכל עסק</p>
-                    </div>
-                    
-                    <div class="about-description">
-                        <h3>החזון שלנו: דמוקרטיזציה של הבינה המלאכותית</h3>
-                        <p>Bizmate נוסדה מתוך החזון לדמוקרטיזציה של הבינה המלאכותית עבור עסקים קטנים ובינוניים. אנחנו מאמינים שכל עסק, ללא קשר לגודלו, ראוי לכלים חכמים שיעזרו לו לצמוח ולהתפתח.</p>
-                        
-                        <p>הצוות שלנו מורכב ממומחי טכנולוגיה ובינה מלאכותית שמבינים את האתגרים הייחודיים של עסקים קטנים. אנחנו פיתחנו פתרון שמשלב פשטות בשימוש עם עוצמה טכנולוגית מתקדמת.</p>
-                    </div>
-
-                    <div class="about-features">
-                        <h3>היתרונות שלנו</h3>
-                        <div class="feature-grid">
-                            <div class="feature-item">
-                                <span class="feature-icon">✓</span>
-                                <span>ליווי צמוד לאורך כל הדרך</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon">✓</span>
-                                <span>עדכונים שוטפים והתאמות לצרכים המשתנים</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon">✓</span>
-                                <span>שיפור דרסטי ביעילות ובתוצאות העסקיות</span>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon">✓</span>
-                                <span>תמיכה טכנית מתמשכת</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-visual">
-                    <div class="about-robot">
-                        <div class="robot-core-about"></div>
-                        <div class="robot-glow-about"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Automation Solutions Section -->
-    <section id="automation-solutions" class="automation-solutions-section">
-        <div class="automation-container">
-            <div class="automation-intro">
-                <h2>פתרונות אוטומציה מתקדמים</h2>
-                <p>אנחנו מספקים פתרונות אוטומציה חכמים המותאמים במיוחד לעסקים המחפשים לשפר את היעילות שלהם ולהקטין עבודה ידנית</p>
-            </div>
-            
-            <div class="solutions-grid">
-                <div class="solution-card">
-                    <div class="solution-icon">🚀</div>
-                    <h3>אוטומציה של תהליכי מכירות</h3>
-                    <p>המערכת שלנו מנהלת את כל מחזור המכירות - מהלקוח הראשון ועד לסגירת העסקה.</p>
-                    <ul class="solution-features">
-                        <li>זיהוי וטיפוח לידים אוטומטי</li>
-                        <li>מעקב אחר לקוחות פוטנציאליים</li>
-                        <li>יצירת הצעות מחיר מותאמות אישית</li>
-                        <li>תזכורות אוטומטיות למעקב</li>
-                        <li>דוחות מכירות מפורטים</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon">🛠️</div>
-                    <h3>ניהול תפעול חכם</h3>
-                    <p>אוטומציה של משימות תפעוליות יומיומיות לחיסכון בזמן ומשאבים.</p>
-                    <ul class="solution-features">
-                        <li>ניהול מלאי אוטומטי</li>
-                        <li>תזמון פגישות ומשימות</li>
-                        <li>אינטגרציה עם מערכות הנהלת חשבונות</li>
-                        <li>ניהול הזמנות ולוגיסטיקה</li>
-                        <li>מעקב אחר ביצועים בזמן אמת</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon">💬</div>
-                    <h3>שירות לקוחות מתקדם</h3>
-                    <p>מענה מיידי ואישי ללקוחות עם יכולות בינה מלאכותית מתקדמות.</p>
-                    <ul class="solution-features">
-                        <li>צ'אט בוט חכם בעברית</li>
-                        <li>מענה אוטומטי לפניות נפוצות</li>
-                        <li>הפנייה חכמה לנציגים אנושיים</li>
-                        <li>מעקב שביעות רצון לקוחות</li>
-                        <li>בסיס ידע דינמי</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon">○</div>
-                    <h3>ניתוח נתונים ותובנות</h3>
-                    <p>הבנה מעמיקה של הביצועים העסקיים שלכם עם תובנות מבוססות נתונים.</p>
-                    <ul class="solution-features">
-                        <li>דשבורדים אישיים ואינטראקטיביים</li>
-                        <li>ניתוח התנהגות לקוחות</li>
-                        <li>תחזיות מכירות מדויקות</li>
-                        <li>זיהוי הזדמנויות שיפור</li>
-                        <li>דוחות ביצועים אוטומטיים</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon">💡</div>
-                    <h3>אוטומציה מותאמת אישית</h3>
-                    <p>יש לכם תהליך חוזר ומשעמם? אנחנו יכולים לבנות אוטומציה כמעט לכל דבר - פשוט חשבו על זה!</p>
-                    <ul class="solution-features">
-                        <li>ניתוח תהליכים עסקיים קיימים</li>
-                        <li>פיתוח פתרונות אוטומציה ייחודיים</li>
-                        <li>אינטגרציה עם מערכות קיימות</li>
-                        <li>חיסכון בזמן ומשאבים משמעותי</li>
-                        <li>ליווי מלא עד להטמעה מושלמת</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solutions Section -->
-    <section id="solutions" class="solutions-section">
-        <div class="solutions-container">
-            <div class="section-header" style="text-align: center;">
-                <h2 style="text-align: center; margin: 20px 10px 20px 10px; padding: 0 10px;">הסוכנים הדיגיטליים שלנו</h2>
-                <p style="text-align: center;">שני סוכנים מתקדמים שיחדיו יהפכו את העסק שלך לחכם ויעיל יותר</p>
-            </div>
-            
-            <div class="agents-carousel">
-                <div class="agent-slide" data-agent="utils">
-                    <div class="agent-visual">
-                        <div class="ai-robot utils-robot">
-                            <div class="robot-core"></div>
-                            <div class="robot-glow"></div>
-                        </div>
-                        <div class="floating-message msg-0">מקס - מנהל תפעול</div>
-                        <div class="floating-message msg-1">תהליכים מהירים</div>
-                        <div class="floating-message msg-2">חיסכון בזמן</div>
-                        <div class="floating-message msg-3">אוטומציה חכמה</div>
-                    </div>
-                </div>
-
-                <div class="agent-slide" data-agent="support">
-                    <div class="agent-visual">
-                        <div class="ai-robot support-robot">
-                            <div class="robot-core"></div>
-                            <div class="robot-glow"></div>
-                        </div>
-                        <div class="floating-message msg-0">נואה - מומחה תמיכה</div>
-                        <div class="floating-message msg-1">תמיכה 24/7</div>
-                        <div class="floating-message msg-2">פתרון מיידי</div>
-                        <div class="floating-message msg-3">לקוחות מרוצים</div>
-                    </div>
-                </div>
-
-                <div class="carousel-controls">
-                    <div class="carousel-dots">
-                        <span class="dot" data-slide="1"></span>
-                        <span class="dot" data-slide="2"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="chat-encouragement">
-                <div class="chat-cta-container">
-                    <h3>מוכנים להתחיל?</h3>
-                    <p>התחילו שיחה עם הסוכן שמתאים לכם ותגלו איך הוא יכול לשנות את העסק שלכם</p>
-                    <button class="chat-now-btn" id="chatNowBtn">
-                        <span class="btn-icon">💬</span>
-                        <span class="btn-text">התחל צ'אט עם אלכס - מומחה מכירות</span>
-                        <span class="btn-arrow">←</span>
-                    </button>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Technology & Integrations Section -->
-    <section id="technology" class="technology-section">
-        <div class="technology-container">
-            <div class="section-header" style="text-align: center;">
-                <h2 style="text-align: center; background: linear-gradient(45deg, #0f172a, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">הטכנולוגיה שלנו</h2>
-                <p style="text-align: center; color: #06b6d4; font-weight: 500;">אינטגרציה חלקה עם הכלים שאתם כבר משתמשים בהם</p>
-            </div>
-            
-            <div class="tech-intro">
-                <div class="tech-intro-content">
-                    <h3>תמיכה במערכות המובילות בישראל</h3>
-                    <p>הפתרונות שלנו מתחברים בצורה חלקה למערכות CRM הפופולריות ביותר בישראל, כלי ניהול עסקיים ופלטפורמות תקשורת. אין צורך לשנות את דרך העבודה שלכם - אנחנו מתאימים את עצמנו אליכם.</p>
-                </div>
-            </div>
-
-            <div class="integrations-grid">
-                <div class="integration-category">
-                    <div class="category-header">
-                        <div class="category-icon">🏢</div>
-                        <h4>מערכות CRM מובילות</h4>
-                    </div>
-                    <div class="integration-list">
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fab fa-salesforce" style="color: #00A1E0;"></i></span>
-                            <span class="integration-name">Salesforce</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fab fa-hubspot" style="color: #FF7A59;"></i></span>
-                            <span class="integration-name">HubSpot</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fas fa-bullseye" style="color: #4CAF50;"></i></span>
-                            <span class="integration-name">Pipedrive</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fas fa-chart-line" style="color: #8E44AD;"></i></span>
-                            <span class="integration-name">Zoho CRM</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="integration-category">
-                    <div class="category-header">
-                        <div class="category-icon">💬</div>
-                        <h4>פלטפורמות תקשורת</h4>
-                    </div>
-                    <div class="integration-list">
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fab fa-whatsapp" style="color: #25D366;"></i></span>
-                            <span class="integration-name">WhatsApp Business</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fab fa-google" style="color: #DB4437;"></i></span>
-                            <span class="integration-name">Gmail</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fab fa-telegram" style="color: #0088CC;"></i></span>
-                            <span class="integration-name">Telegram</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fas fa-mobile-alt" style="color: #34495E;"></i></span>
-                            <span class="integration-name">SMS</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="integration-category">
-                    <div class="category-header">
-                        <div class="category-icon">🛠️</div>
-                        <h4>כלי ניהול עסקיים</h4>
-                    </div>
-                    <div class="integration-list">
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fas fa-calendar-check" style="color: #FF3D57;"></i></span>
-                            <span class="integration-name">Monday.com</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fas fa-sticky-note" style="color: #000000;"></i></span>
-                            <span class="integration-name">Notion</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fas fa-bolt" style="color: #FF4F00;"></i></span>
-                            <span class="integration-name">Zapier</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fas fa-link" style="color: #6C2BD9;"></i></span>
-                            <span class="integration-name">Make (Integromat)</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="integration-category">
-                    <div class="category-header">
-                        <div class="category-icon">🏪</div>
-                        <h4>פלטפורמות מסחר</h4>
-                    </div>
-                    <div class="integration-list">
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fab fa-shopify" style="color: #7AB55C;"></i></span>
-                            <span class="integration-name">Shopify</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fab fa-wordpress" style="color: #21759B;"></i></span>
-                            <span class="integration-name">WooCommerce</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fab fa-paypal" style="color: #003087;"></i></span>
-                            <span class="integration-name">PayPal</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                        <div class="integration-item">
-                            <span class="integration-logo"><i class="fab fa-stripe" style="color: #008CDD;"></i></span>
-                            <span class="integration-name">Stripe</span>
-                            <span class="integration-status">✓</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-features">
-                <div class="tech-feature">
-                    <div class="feature-icon-large">🚀</div>
-                    <h4>הטמעה מהירה</h4>
-                    <p>התחברות למערכות הקיימות תוך דקות ללא הפרעה לפעילות השוטפת</p>
-                </div>
-                <div class="tech-feature">
-                    <div class="feature-icon-large">🔒</div>
-                    <h4>אבטחה מתקדמת</h4>
-                    <p>הצפנה ברמה בנקאית ועמידה בתקני אבטחת מידע הקפדניים ביותר</p>
-                </div>
-                <div class="tech-feature">
-                    <div class="feature-icon-large">🔄</div>
-                    <h4>סנכרון אוטומטי</h4>
-                    <p>עדכון נתונים בזמן אמת בין כל המערכות ללא צורך בעבודה ידנית</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us" class="why-choose-section">
-        <div class="why-choose-container">
-            <div class="section-header" style="text-align: center;">
-                <h2 style="text-align: center;">למה לבחור ב-Bizmate?</h2>
-                <p style="text-align: center;">אנחנו לא רק עוד חברת טכנולוגיה - אנחנו השותפים שלכם להצלחה</p>
-            </div>
-
-            <div class="why-choose-grid">
-                <div class="choice-card featured">
-                    <div class="choice-icon">🎯</div>
-                    <h3>מותאם במיוחד לשוק הישראלי</h3>
-                    <p>אנחנו מבינים את האתגרים הייחודיים של עסקים בישראל. הפתרונות שלנו מותאמים לתרבות העסקית הישראלית, שפה עברית מושלמת ותמיכה בתקנות המקומיות.</p>
-                    <div class="choice-benefits">
-                        <span class="benefit-tag">תמיכה בעברית 100%</span>
-                        <span class="benefit-tag">הבנת השוק המקומי</span>
-                    </div>
-                </div>
-
-                <div class="choice-card">
-                    <div class="choice-icon">⚡</div>
-                    <h3>התחלה מהירה</h3>
-                    <p>בעוד שחברות אחרות דורשות שבועות של הכנה, אנחנו מאפשרים לכם להתחיל לראות תוצאות כבר מיד. ההטמעה שלנו פשוטה ומהירה.</p>
-                    <div class="choice-stats">
-                        <div class="stat-mini">
-                            <span class="stat-number">מיידי</span>
-                            <span class="stat-label">התחלה</span>
-                        </div>
-                        <div class="stat-mini">
-                            <span class="stat-number">0</span>
-                            <span class="stat-label">ידע טכני נדרש</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="choice-card">
-                    <div class="choice-icon">💰</div>
-                    <h3>מחיר הוגן וללא הפתעות</h3>
-                    <p>אין עלויות נסתרות. שקיפות מלאה במחירים וגמישות בתוכניות התשלום המותאמות לעסקים קטנים ובינוניים.</p>
-                    <div class="choice-benefits">
-                        <span class="benefit-tag">ללא עלויות נסתרות</span>
-                        <span class="benefit-tag">ביטול בכל עת</span>
-                    </div>
-                </div>
-
-                <div class="choice-card">
-                    <div class="choice-icon">🚀</div>
-                    <h3>תוצאות מוכחות וניתנות למדידה</h3>
-                    <p>הלקוחות שלנו רואים שיפור ממוצע של 40% במכירות, 60% חיסכון בזמן ו-98% הגדלה בשביעות רצון הלקוחות. התוצאות מדברות בעד עצמן.</p>
-                    <div class="results-grid">
-                        <div class="result-item">
-                            <span class="result-number">+40%</span>
-                            <span class="result-label">מכירות</span>
-                        </div>
-                        <div class="result-item">
-                            <span class="result-number">60%</span>
-                            <span class="result-label">חיסכון בזמן</span>
-                        </div>
-                        <div class="result-item">
-                            <span class="result-number">+98%</span>
-                            <span class="result-label">שביעות רצון</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="choice-card">
-                    <div class="choice-icon">🤝</div>
-                    <h3>תמיכה אישית 24/7</h3>
-                    <p>צוות התמיכה שלנו זמין עבורכם בכל שעה, בעברית. לא רק טכנאים - יועצים עסקיים שמבינים את העסק שלכם ויודעים איך לעזור לכם להצליח.</p>
-                    <div class="support-features">
-                        <div class="support-item">
-                            <span class="support-icon">📞</span>
-                            <span>טלפון ישיר</span>
-                        </div>
-                        <div class="support-item">
-                            <span class="support-icon">💬</span>
-                            <span>צ'אט חי</span>
-                        </div>
-                        <div class="support-item">
-                            <span class="support-icon">📧</span>
-                            <span>אימייל</span>
-                        </div>
-                        <div class="support-item">
-                            <span class="support-icon">🎥</span>
-                            <span>שיחות וידאו</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Reviews Section -->
-    <section id="reviews" class="reviews-section">
-        <div class="reviews-container">
-            <div class="section-header" style="text-align: center;">
-                <h2 style="text-align: center; background: linear-gradient(45deg, #0f172a, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">מה הלקוחות שלנו אומרים</h2>
-                <p style="text-align: center; color: #06b6d4; font-weight: 500;">עסקים קטנים ובינוניים בוחרים ב-Bizmate לצמיחה והתייעלות</p>
-            </div>
-            
-            <div class="stats-section">
-                <div class="stat-item">
-                    <div class="stat-number" data-target="250">0</div>
-                    <div class="stat-label">לקוחות מרוצים</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="98">0</div>
-                    <div class="stat-label">שביעות רצון</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="24">0</div>
-                    <div class="stat-label">תמיכה זמינה</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-target="3">0</div>
-                    <div class="stat-label">שיפור ביעילות</div>
-                </div>
-            </div>
-
-            <div class="reviews-carousel">
-                <div class="review-slide active">
-                    <div class="reviewer-avatar">
-                        <div class="avatar-icon">👨‍💼</div>
-                    </div>
-                    <div class="reviewer-name">
-                        <h4>דוד כהן</h4>
-                        <span>בעל חנות אלקטרוניקה</span>
-                    </div>
-                    <div class="review-content">
-                        <p>"הסוכן מכירות של Bizmate הכפיל את המכירות שלנו תוך 3 חודשים. האוטומציה חסכה לנו שעות של עבודה ידנית."</p>
-                    </div>
-                </div>
-
-                <div class="review-slide">
-                    <div class="reviewer-avatar">
-                        <div class="avatar-icon">👩‍💼</div>
-                    </div>
-                    <div class="reviewer-name">
-                        <h4>רחל לוי</h4>
-                        <span>בעלת מכון יופי</span>
-                    </div>
-                    <div class="review-content">
-                        <p>"סוכן התפעול שינה לנו את המשחק. תהליכים שלקחו שבועות מתבצעים עכשיו תוך דקות."</p>
-                    </div>
-                </div>
-
-                <div class="review-slide">
-                    <div class="reviewer-avatar">
-                        <div class="avatar-icon">👨‍💻</div>
-                    </div>
-                    <div class="reviewer-name">
-                        <h4>יוסי אברהם</h4>
-                        <span>בעל מסעדה</span>
-                    </div>
-                    <div class="review-content">
-                        <p>"שירות הלקוחות שלנו השתפר משמעותית עם סוכן התמיכה. הלקוחות מקבלים מענה מיידי 24/7."</p>
-                    </div>
-                </div>
-
-                <div class="reviews-controls">
-                    <div class="reviews-dots">
-                        <span class="review-dot active" data-slide="0"></span>
-                        <span class="review-dot" data-slide="1"></span>
-                        <span class="review-dot" data-slide="2"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section company-info">
-                    <div class="footer-logo">
-                        <h3>Bizmate</h3>
-                        <span class="footer-tagline">השותף העסקי החכם שלכם</span>
-                    </div>
-                    <p class="company-description">
-                        פתרונות בינה מלאכותית מתקדמים לעסקים קטנים ובינוניים בישראל. 
-                        אנחנו כאן כדי לעזור לכם לצמוח ולהצליח עם טכנולוגיה חכמה ופשוטה.
-                    </p>
-                </div>
-
-                <div class="footer-section contact-info">
-                    <h4>צרו קשר</h4>
-                    <div class="contact-item">
-                        <span class="contact-icon">📱</span>
-                        <span class="contact-text">053-4202016</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <span class="contact-text">bizmate@bizmate-automation.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <span class="contact-text">תל אביב, ישראל</span>
-                    </div>
-                </div>
-
-                <div class="footer-section quick-links">
-                    <h4>קישורים מהירים</h4>
-                    <ul class="footer-links">
-                        <li><a href="/">בית</a></li>
-                        <li><a href="/about">מי אנחנו</a></li>
-                        <li><a href="/blog">בלוג</a></li>
-                        <li><a href="/contact">צור קשר</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section social-media">
-                    <h4>עקבו אחרינו</h4>
-                    <div class="social-icons">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/BizmateAutomation/" class="social-icon facebook" aria-label="Facebook">
-                            <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook" width="24" height="24">
-                        </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bizmate_automation?igsh=b2VxeXlsNnF0ZDI1&utm_source=qr" class="social-icon instagram" aria-label="Instagram">
-                            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24" height="24">
-                        </a>
-                        <a  target="_blank" rel="noopener noreferrer" href="https://wa.me/972534202016?text=היי, אני מעוניין לקבל מידע על הסוכנים הדיגיטליים של Bizmate" class="social-icon whatsapp" aria-label="WhatsApp">
-                            <img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="WhatsApp" width="24" height="24">
-                        </a>
-                       
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <div class="copyright">
-                        <p>&copy; 2025 Bizmate Automation כל הזכויות שמורות.</p>
-                    </div>
-                    <div class="footer-bottom-links">
-                        <a href="/files/accessibility.pdf">הצהרת נגישות</a>
-                        <span class="separator">|</span>
-                        <a href="/files/terms.pdf">תנאי שימוש</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Chat Button -->
-    <div class="whatsapp-chat">
-        <a href="https://wa.me/972534202016?text=היי, אני מעוניין לקבל מידע על הסוכנים הדיגיטליים של Bizmate" 
-           target="_blank" 
-           class="whatsapp-btn"
-           aria-label="התחל עכשיו עם הסוכן שלך">
-            <span class="whatsapp-icon">💬</span>
-            <span class="whatsapp-text">התחל עכשיו עם הסוכן שלך</span>
-        </a>
+  <!-- ── SCREEN 3: Offer Preview ────────────────────────────── -->
+  <div class="screen" id="s3">
+    <div class="top-bar">
+      <button class="icon-btn" onclick="goBack('s3','s2')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="top-bar-title">תצוגה מקדימה</div>
+      <div style="width:36px"></div>
     </div>
 
-    <!-- Mobile Bot Buttons -->
-    <div class="mobile-bot-buttons">
-        <button class="bot-btn" onclick="openDemoChat()" aria-label="קבל הדגמה חינם">
-            🤖
-        </button>
-        <a href="https://wa.me/972534202016?text=היי, אני מעוניין לקבל מידע על הסוכנים הדיגיטליים של Bizmate" 
-           target="_blank" 
-           class="whatsapp-btn"
-           aria-label="התחל עכשיו עם הסוכן שלך">
-            <span class="whatsapp-icon">💬</span>
-        </a>
+    <div class="preview-scroll">
+      <div class="preview-doc">
+        <div class="doc-header-band">
+          <div class="doc-company">אבי בנייה ושיפוצים</div>
+          <div class="doc-tagline">קבלן בנייה מוסמך · רישיון מס׳ 45-823</div>
+          <div class="doc-meta">
+            <span>הצעה מס׳ <strong id="prev-num">HQ-2024-001</strong></span>
+            <span id="prev-date"></span>
+          </div>
+        </div>
+
+        <div class="doc-body">
+          <div class="doc-section-title">לכבוד</div>
+          <div class="doc-field" id="prev-client">—</div>
+
+          <div class="doc-section-title" style="margin-top:12px">כתובת הפרויקט</div>
+          <div class="doc-field" id="prev-addr">—</div>
+
+          <div class="doc-section-title" style="margin-top:12px">תיאור העבודה</div>
+          <div class="doc-field" id="prev-desc" style="font-size:13px;color:var(--muted);line-height:1.6">—</div>
+
+          <hr class="doc-divider" />
+
+          <table class="doc-table">
+            <thead>
+              <tr>
+                <th>תיאור</th>
+                <th style="text-align:center">כמות</th>
+                <th style="text-align:left">סכום</th>
+              </tr>
+            </thead>
+            <tbody id="prev-items"></tbody>
+          </table>
+        </div>
+
+        <div class="doc-total-band">
+          <div>
+            <div class="doc-total-label">סה"כ לתשלום</div>
+            <div class="doc-vat" id="prev-vat-note">כולל מע"מ</div>
+          </div>
+          <div class="doc-total-val" id="prev-total">₪0</div>
+        </div>
+
+        <div class="doc-footer-note">הצעה זו בתוקף ל‑30 יום. תשלום: 40% מקדמה, יתרה עם סיום העבודה.</div>
+      </div>
+
+      <div style="margin-top:12px;text-align:center;font-size:12px;color:var(--muted);">
+        ניתן לשתף כ-PDF · חתימה דיגיטלית זמינה
+      </div>
     </div>
 
+    <div class="bottom-actions">
+      <button class="btn-secondary" onclick="goBack('s3','s2')">ערוך</button>
+      <button class="btn-primary" onclick="sendOffer()">שלח ללקוח ←</button>
+    </div>
+
+    <nav class="nav-bar">
+      <div class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="#006FFD"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><rect x="9" y="14" width="6" height="7" fill="white" rx="1"/></svg>
+        <span>בית</span>
+        <div class="nav-dot"></div>
+      </div>
+      <div class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        <span>הגדרות</span>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ── SCREEN 4: Home – With Offer ────────────────────────── -->
+  <div class="screen active" id="s4">
+    <div class="top-bar">
+      <button class="icon-btn" title="עזרה">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+          <line x1="12" y1="17" x2="12.01" y2="17" stroke-width="2.5"/>
+        </svg>
+      </button>
+      <div class="top-bar-title">שלום, אבי</div>
+      <div style="width:36px"></div>
+    </div>
+
+    <div class="subheader-row">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div class="count-badge">4</div>
+        <div class="subheader-title">ההצעות שלי</div>
+      </div>
+      <button class="icon-btn" title="חיפוש">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="status-switch" id="sw4">
+      <div class="switch-track" id="sw4-track"></div>
+      <div class="status-pill active" data-sw="sw4" data-idx="0">הכל</div>
+      <div class="status-pill" data-sw="sw4" data-idx="1">טיוטה</div>
+      <div class="status-pill" data-sw="sw4" data-idx="2">נשלח</div>
+      <div class="status-pill" data-sw="sw4" data-idx="3">אושר</div>
+    </div>
+
+    <div class="filter-row">
+      <div class="filter-pill">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 1H2a1 1 0 00-.8 1.6L6 9v5l4-2V9l4.8-6.4A1 1 0 0014 1z"/></svg>
+        סוג
+        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+      </div>
+      <div class="filter-pill">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="0" y1="4" x2="16" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="4" y1="12" x2="12" y2="12"/></svg>
+        חדש ← ישן
+        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="offer-list">
+
+        <!-- Card 1: דוד כהן – אושר + הצעת מחיר → Signed -->
+        <div class="offer-card" onclick="openOffer('david')">
+          <div class="card-info">
+            <div class="card-client">דוד כהן</div>
+            <div class="card-desc">שיפוץ מקלחת</div>
+            <div class="card-badges">
+              <span class="cbadge cbadge-approved">אושר</span>
+              <span class="cbadge cbadge-quote">הצעת מחיר</span>
+            </div>
+          </div>
+          <button class="card-cta-btn" onclick="event.stopPropagation();openOffer('david')">צפה בהצעה</button>
+        </div>
+
+        <!-- Card 2: רחל לוי – נשלח + כתב כמויות → BOQ sent -->
+        <div class="offer-card" onclick="openOffer('rachel')">
+          <div class="card-info">
+            <div class="card-client">רחל לוי</div>
+            <div class="card-desc">חידוש מטבח</div>
+            <div class="card-badges">
+              <span class="cbadge cbadge-sent">נשלח</span>
+              <span class="cbadge cbadge-boq">כתב כמויות</span>
+            </div>
+          </div>
+          <button class="card-cta-btn" onclick="event.stopPropagation();openOffer('rachel')">צפה בהצעה</button>
+        </div>
+
+        <!-- Card 3: משה ישראלי – טיוטה + כתב כמויות → Draft -->
+        <div class="offer-card" onclick="openOffer('moshe')">
+          <div class="card-info">
+            <div class="card-client">משה ישראלי</div>
+            <div class="card-desc">שיפוץ דירה 4 חדרים</div>
+            <div class="card-badges">
+              <span class="cbadge cbadge-draft">טיוטה</span>
+              <span class="cbadge cbadge-boq">כתב כמויות</span>
+            </div>
+          </div>
+          <button class="card-cta-btn" onclick="event.stopPropagation();openOffer('moshe')">צפה בהצעה</button>
+        </div>
+
+        <!-- Card 4: יעל אברהם – אושר + הצעת מחיר → Signed -->
+        <div class="offer-card" onclick="openOffer('yael')">
+          <div class="card-info">
+            <div class="card-client">יעל אברהם</div>
+            <div class="card-desc">איטום גג + מרפסת</div>
+            <div class="card-badges">
+              <span class="cbadge cbadge-approved">אושר</span>
+              <span class="cbadge cbadge-quote">הצעת מחיר</span>
+            </div>
+          </div>
+          <button class="card-cta-btn" onclick="event.stopPropagation();openOffer('yael')">צפה בהצעה</button>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="fab">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    </button>
+
+    <nav class="nav-bar">
+      <div class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="#006FFD"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><rect x="9" y="14" width="6" height="7" fill="white" rx="1"/></svg>
+        <span>בית</span>
+        <div class="nav-dot"></div>
+      </div>
+      <div class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="#9E9E9E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        <span>הגדרות</span>
+      </div>
+    </nav>
+
+    <!-- send success overlay -->
+    <div class="success-overlay" id="send-success">
+      <div class="success-ring">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <div class="success-title">ההצעה נשלחה!</div>
+      <div class="success-sub">ההצעה הועברה ללקוח בהצלחה. עכשיו ניתן לעקוב אחר הסטטוס.</div>
+      <button class="success-btn" onclick="dismissSuccess()">לצפייה בהצעות</button>
+    </div>
+  </div>
+
+  <!-- ── SCREEN 5: Supplier Order View ─────────────────────── -->
+  <!-- ── SCREEN 5: Offer Detail ────────────────────────────── -->
+  <div class="screen" id="s5">
+    <div class="top-bar">
+      <!-- RTL: first → RIGHT: פעולות -->
+      <button class="act-btn">פעולות</button>
+      <div class="top-bar-title">פרטי ההצעה</div>
+      <!-- RTL: last → LEFT: back -->
+      <button class="icon-btn" onclick="goBack('s5','s4')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+    </div>
+
+    <div class="detail-scroll">
+      <!-- Tab switcher -->
+      <div class="det-tabs-wrap">
+        <div class="det-tab active" id="det-tab-client"></div>
+        <div class="det-tab" id="det-tab-cost"></div>
+      </div>
+
+      <!-- Client + project -->
+      <div class="det-client-line" id="det-client"></div>
+
+      <!-- Stats -->
+      <div class="det-stats-row">
+        <!-- RTL: first → RIGHT: amount -->
+        <div class="det-stat">
+          <div class="det-stat-val" id="det-total-val">—</div>
+          <div class="det-stat-lbl">כולל מע"מ</div>
+        </div>
+        <!-- RTL: second → LEFT: items -->
+        <div class="det-stat">
+          <div class="det-stat-val" id="det-items-val">—</div>
+          <div class="det-stat-lbl" id="det-sections-lbl">—</div>
+        </div>
+      </div>
+
+      <div class="det-divider"></div>
+
+      <!-- Categories -->
+      <div class="det-cats-scroll"><div id="det-cats"></div></div>
+
+      <div class="det-divider"></div>
+
+      <!-- Signature (injected by JS) -->
+      <div id="det-sig"></div>
+
+      <!-- Order button -->
+      <div class="order-btn-wrap">
+        <button class="order-btn" onclick="openGypsumOrder()">הזמן ממרכז הגבס (מחיר מומלץ)</button>
+      </div>
+
+      <!-- Illustration -->
+      <img class="det-illus" src="sketches/Building permit-rafiki.png" alt="" />
+    </div>
+  </div>
+
+  <!-- ── Screen 6: Gypsum Center Order ─────────────────────── -->
+  <div class="screen" id="s6">
+    <div class="top-bar">
+      <div class="top-bar-title">הזמנה ממרכז הגבס</div>
+      <button class="icon-btn" onclick="goBack('s6','s5')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+    </div>
+
+    <div class="gyp-scroll">
+      <div class="gyp-head">
+        <div class="gyp-head-text">
+          <div class="gyp-head-title">
+            <svg class="gyp-head-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V7l9-4 9 4v14"/><path d="M9 21V12h6v9"/></svg>
+            מרכז הגבס
+          </div>
+          <div class="gyp-head-sub" id="gyp-sub"></div>
+        </div>
+        <span class="gyp-pill">מחיר מומלץ</span>
+      </div>
+
+      <div class="gyp-selectall" onclick="gypToggleAll()">
+        <div class="gyp-selectall-icon" id="gyp-all-icon">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 12h14"/></svg>
+        </div>
+        <div class="gyp-selectall-text">בחר הכל</div>
+        <div class="gyp-selectall-sub" id="gyp-all-sub">—</div>
+      </div>
+
+      <div id="gyp-items"></div>
+    </div>
+
+    <div class="gyp-footer">
+      <div class="gyp-summary">
+        <div class="gyp-sum-left">
+          <div class="gyp-sum-lbl">סה"כ להזמנה</div>
+          <div class="gyp-sum-val" id="gyp-sum-val">₪0</div>
+        </div>
+        <div class="gyp-sum-right" id="gyp-sum-count">—</div>
+      </div>
+      <button class="gyp-cta">צור הזמנה למרכז הגבס</button>
+    </div>
+  </div>
+
+</div><!-- /phone -->
+
+<script>
+  /* ── State ──────────────────────────────────────────────── */
+  let offerData = {
+    client: 'דוד כהן',
+    addr: 'רחוב הרצל 12, תל אביב',
+    desc: 'שיפוץ מטבח ואמבטיה',
+    items: [
+      { desc: 'ריצוף קרמיקה 60×60', qty: 20, price: 180 },
+      { desc: 'אינסטלציה מטבח', qty: 1, price: 3200 },
+      { desc: 'תשלום עבור עבודה', qty: 8, price: 350 }
+    ]
+  };
+
+  let itemCounter = 0;
+
+  /* ── Offer detail data ──────────────────────────────────── */
+  const offerDetails = {
+    david: {
+      name: 'דוד כהן', project: 'שיפוץ מקלחת',
+      total: '₪18,018', items: 12, sections: 3,
+      type: 'quote', status: 'approved',
+      signedBy: 'דוד כהן', signedDate: '13.04.2026',
+      cats: [
+        { name: 'הריסות ופירוקים', amount: '₪3,500', count: 5 },
+        { name: 'אינסטלציה',        amount: '₪6,300', count: 4 },
+        { name: 'ריצוף וחיפוי',     amount: '₪5,600', count: 3 },
+      ]
+    },
+    rachel: {
+      name: 'רחל לוי', project: 'חידוש מטבח',
+      total: '₪45,200', items: 38, sections: 9,
+      type: 'boq', status: 'sent',
+      cats: [
+        { name: 'הריסה',            amount: '₪11,110', count: 8 },
+        { name: 'בניה',             amount: '₪8,400',  count: 5 },
+        { name: 'חשמל ותקשורת',     amount: '₪7,200',  count: 6 },
+        { name: 'אינסטלציה',        amount: '₪5,800',  count: 4 },
+        { name: 'חיפוי וריצוף',     amount: '₪4,600',  count: 4 },
+      ]
+    },
+    moshe: {
+      name: 'משה ישראלי', project: 'שיפוץ דירה 4 חדרים',
+      total: '₪125,000', items: 24, sections: 4,
+      type: 'boq', status: 'draft',
+      cats: [
+        { name: 'סלון',               amount: '₪38,500', count: 6 },
+        { name: 'מטבח',               amount: '₪42,000', count: 8 },
+        { name: 'חדר שינה',            amount: '₪24,500', count: 5 },
+        { name: 'מקלחת + שירותים',    amount: '₪20,000', count: 5 },
+      ]
+    },
+    yael: {
+      name: 'יעל אברהם', project: 'איטום גג + מרפסת',
+      total: '₪22,400', items: 15, sections: 3,
+      type: 'quote', status: 'approved',
+      signedBy: 'יעל אברהם', signedDate: '20.04.2026',
+      cats: [
+        { name: 'הכנת משטח', amount: '₪8,200', count: 6 },
+        { name: 'איטום',     amount: '₪9,100', count: 5 },
+        { name: 'גימור',     amount: '₪5,100', count: 4 },
+      ]
+    }
+  };
+
+  function openOffer(key) {
+    currentOfferKey = key;
+    buildOfferDetail(key);
+    goTo('s5');
+  }
+
+  /* ── Gypsum order state ─────────────────────────────────── */
+  let currentOfferKey = null;
+  const gypsumCatalog = [
+    { name: 'פלטות גבס 12.5מ"מ',   detail: '32 פלטות × 40 ₪',   price: 1280, selected: true  },
+    { name: 'פרופילים למחיצות U',   detail: '18 יח\' × 24 ₪',     price: 432,  selected: true  },
+    { name: 'פרופילים אנכיים C',    detail: '36 יח\' × 22 ₪',     price: 792,  selected: true  },
+    { name: 'ברגי גבס 25×3.5',      detail: '1,000 יח\' × 0.25 ₪', price: 250,  selected: true  },
+    { name: 'משחת שפכטל מוכנה',     detail: '8 דליים × 140 ₪',    price: 1120, selected: true  },
+    { name: 'סרטי חיזוק לחיבורים', detail: '6 גלילים × 18 ₪',    price: 108,  selected: false },
+    { name: 'בידוד אקוסטי למחיצה', detail: '20 מ"ר × 28 ₪',      price: 560,  selected: false },
+  ];
+  let gypsumItems = [];
+
+  function openGypsumOrder() {
+    gypsumItems = gypsumCatalog.map(i => ({ ...i }));
+    const o = offerDetails[currentOfferKey];
+    const sub = o ? (o.name + ' • ' + o.project) : '';
+    document.getElementById('gyp-sub').textContent = sub;
+    renderGypsum();
+    goTo('s6');
+  }
+
+  function renderGypsum() {
+    const cont = document.getElementById('gyp-items');
+    cont.innerHTML = gypsumItems.map((it, i) => `
+      <div class="gyp-item ${it.selected ? 'selected' : ''}" onclick="gypToggle(${i})">
+        <div class="gyp-item-radio"></div>
+        <div class="gyp-item-text">
+          <div class="gyp-item-name">${it.name}</div>
+          <div class="gyp-item-sub">${it.detail}</div>
+        </div>
+        <div class="gyp-item-price">₪${it.price.toLocaleString()}</div>
+      </div>
+    `).join('');
+
+    const selected = gypsumItems.filter(i => i.selected);
+    const total = selected.reduce((s, i) => s + i.price, 0);
+    document.getElementById('gyp-sum-val').textContent = '₪' + total.toLocaleString();
+    document.getElementById('gyp-sum-count').textContent = selected.length + ' פריטים נבחרו';
+    document.getElementById('gyp-all-sub').textContent =
+      selected.length + ' מתוך ' + gypsumItems.length + ' נבחרו';
+  }
+
+  function gypToggle(i) {
+    gypsumItems[i].selected = !gypsumItems[i].selected;
+    renderGypsum();
+  }
+
+  function gypToggleAll() {
+    const allSelected = gypsumItems.every(i => i.selected);
+    gypsumItems.forEach(i => i.selected = !allSelected);
+    renderGypsum();
+  }
+
+  function buildOfferDetail(key) {
+    const o = offerDetails[key];
+    const prefix = o.type === 'quote' ? 'הצעת מחיר' : 'כתב כמויות';
+    document.getElementById('det-tab-client').textContent = prefix + ' לקוח';
+    document.getElementById('det-tab-cost').textContent   = prefix + ' עלות';
+    document.getElementById('det-client').textContent     = o.name + ' • ' + o.project;
+    document.getElementById('det-total-val').textContent  = o.total;
+    document.getElementById('det-items-val').textContent  = o.items + ' פריטים';
+    document.getElementById('det-sections-lbl').textContent = o.sections + ' חלוקים';
+
+    const catsCont = document.getElementById('det-cats');
+    catsCont.innerHTML = o.cats.map(c => `
+      <div class="cat-row">
+        <div class="cat-text">
+          <div class="cat-name">${c.name}</div>
+          <div class="cat-count">${c.count} פריטים</div>
+        </div>
+        <div class="cat-left">
+          <span class="cat-amount">${c.amount}</span>
+          <svg class="cat-chev" viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </div>
+      </div>
+    `).join('');
+
+    const sigCont = document.getElementById('det-sig');
+    const showSigned   = o.status === 'approved' && o.signedBy;
+    const showUnsigned = (o.type === 'quote') || (o.type === 'boq' && o.status === 'draft');
+
+    if (showSigned) {
+      sigCont.innerHTML = `
+        <div class="sig-box-signed">
+          <div class="sig-top-row">
+            <div class="sig-check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <span class="sig-top-label">חתימת הלקוח</span>
+            <svg class="sig-pencil" viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+              <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+            </svg>
+          </div>
+          <div class="sig-name-text">${o.signedBy}</div>
+          <div class="sig-date-text">נחתם בתאריך: ${o.signedDate}</div>
+        </div>`;
+    } else if (showUnsigned) {
+      sigCont.innerHTML = `
+        <div class="sig-box-unsigned">
+          <div class="sig-unsigned-text">חתימת הלקוח • טרם נחתם</div>
+          <svg class="sig-pencil" viewBox="0 0 24 24" fill="none" stroke="#006FFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+            <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+          </svg>
+        </div>`;
+    } else {
+      sigCont.innerHTML = '';
+    }
+  }
+
+  /* ── Navigation ─────────────────────────────────────────── */
+  const screenStack = [];
+  function goTo(id) {
+    const cur = document.querySelector('.screen.active');
+    if (cur && cur.id !== id) {
+      screenStack.push(cur.id);
+      cur.classList.add('slide-left');
+      cur.classList.remove('active');
+    }
+    const next = document.getElementById(id);
+    next.classList.add('active');
+    next.classList.remove('slide-left');
+    if (id === 's3') buildPreview();
+  }
+
+  function goBack(from, to) {
+    const cur = document.getElementById(from);
+    const prev = document.getElementById(to);
+    cur.classList.remove('active');
+    prev.classList.remove('slide-left');
+    prev.classList.add('active');
+  }
+
+  /* ── Status switches ────────────────────────────────────── */
+  function initSwitch(swId) {
+    const sw = document.getElementById(swId);
+    const track = document.getElementById(swId + '-track');
+    const pills = sw.querySelectorAll('.status-pill');
+
+    function updateTrack(idx) {
+      const pill = pills[idx];
+      track.style.left  = pill.offsetLeft + 'px';
+      track.style.width = pill.offsetWidth + 'px';
+    }
+
+    pills.forEach((p, i) => {
+      p.addEventListener('click', () => {
+        pills.forEach(x => x.classList.remove('active'));
+        p.classList.add('active');
+        updateTrack(i);
+      });
+    });
+
+    setTimeout(() => {
+      const active = sw.querySelector('.status-pill.active');
+      if (active) {
+        const idx = Array.from(pills).indexOf(active);
+        updateTrack(idx);
+      }
+    }, 50);
+  }
+
+  /* ── Line items ─────────────────────────────────────────── */
+  function addLineItem(desc = '', qty = '', price = '') {
+    itemCounter++;
+    const id = 'li-' + itemCounter;
+    const div = document.createElement('div');
+    div.className = 'line-item';
+    div.id = id;
+    div.innerHTML = `
+      <input class="li-input" placeholder="תיאור" value="${desc}" oninput="recalc()" />
+      <input class="li-input" placeholder="כמות" type="number" min="0" value="${qty}" style="text-align:center" oninput="recalc()" />
+      <input class="li-input" placeholder="₪" type="number" min="0" value="${price}" oninput="recalc()" />
+      <button class="li-delete" onclick="removeItem('${id}')">×</button>
+    `;
+    document.getElementById('line-items-container').appendChild(div);
+    recalc();
+  }
+
+  function removeItem(id) {
+    document.getElementById(id)?.remove();
+    recalc();
+  }
+
+  function recalc() {
+    let sub = 0;
+    document.querySelectorAll('#line-items-container .line-item').forEach(row => {
+      const inputs = row.querySelectorAll('input');
+      const qty   = parseFloat(inputs[1].value) || 0;
+      const price = parseFloat(inputs[2].value) || 0;
+      sub += qty * price;
+    });
+    const vat   = sub * 0.18;
+    const total = sub + vat;
+    document.getElementById('t-sub').textContent   = '₪' + sub.toLocaleString('he-IL', {maximumFractionDigits:0});
+    document.getElementById('t-vat').textContent   = '₪' + vat.toLocaleString('he-IL', {maximumFractionDigits:0});
+    document.getElementById('t-total').textContent = '₪' + total.toLocaleString('he-IL', {maximumFractionDigits:0});
+  }
+
+  function getItemsFromForm() {
+    const items = [];
+    document.querySelectorAll('#line-items-container .line-item').forEach(row => {
+      const inputs = row.querySelectorAll('input');
+      const desc  = inputs[0].value.trim();
+      const qty   = parseFloat(inputs[1].value) || 0;
+      const price = parseFloat(inputs[2].value) || 0;
+      if (desc || qty || price) items.push({ desc, qty, price });
+    });
+    return items;
+  }
+
+  function fmt(n) { return '₪' + n.toLocaleString('he-IL', {maximumFractionDigits:0}); }
+
+  /* ── Save draft ─────────────────────────────────────────── */
+  function saveDraft() {
+    const t = document.getElementById('toast2');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2200);
+  }
+
+  /* ── Preview ────────────────────────────────────────────── */
+  function previewOffer() {
+    offerData.client = document.getElementById('f-client').value || offerData.client;
+    offerData.addr   = document.getElementById('f-addr').value   || offerData.addr;
+    offerData.desc   = document.getElementById('f-desc').value   || offerData.desc;
+    offerData.items  = getItemsFromForm().length > 0 ? getItemsFromForm() : offerData.items;
+    goTo('s3');
+  }
+
+  function buildPreview() {
+    document.getElementById('prev-client').textContent = offerData.client || '—';
+    document.getElementById('prev-addr').textContent   = offerData.addr   || '—';
+    document.getElementById('prev-desc').textContent   = offerData.desc   || '—';
+
+    const d = new Date();
+    document.getElementById('prev-date').textContent =
+      d.toLocaleDateString('he-IL', { year:'numeric', month:'long', day:'numeric' });
+
+    const tbody = document.getElementById('prev-items');
+    tbody.innerHTML = '';
+    let sub = 0;
+    (offerData.items.length ? offerData.items : getItemsFromForm()).forEach(it => {
+      const line = it.qty * it.price;
+      sub += line;
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${it.desc || '—'}</td>
+        <td style="text-align:center">${it.qty}</td>
+        <td style="text-align:left">${fmt(line)}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+    const total = sub * 1.18;
+    document.getElementById('prev-total').textContent    = fmt(total);
+    document.getElementById('prev-vat-note').textContent = 'כולל מע"מ ' + fmt(sub * 0.18);
+  }
+
+  /* ── Send offer ─────────────────────────────────────────── */
+  function sendOffer() {
+    goTo('s4');
+    setTimeout(() => {
+      document.getElementById('send-success').classList.add('show');
+    }, 400);
+  }
+
+  function dismissSuccess() {
+    document.getElementById('send-success').classList.remove('show');
+  }
 
 
+  /* ── Init ───────────────────────────────────────────────── */
+  function populateDefaultForm() {
+    document.getElementById('f-client').value = offerData.client;
+    document.getElementById('f-addr').value   = offerData.addr;
+    document.getElementById('f-desc').value   = offerData.desc;
+    offerData.items.forEach(it => addLineItem(it.desc, it.qty, it.price));
+  }
+
+  window.addEventListener('load', () => {
+    initSwitch('sw1');
+    initSwitch('sw4');
+    populateDefaultForm();
+  });
+</script>
 </body>
 </html>
